@@ -4,7 +4,7 @@ ITEM_DEFINITIONS["seasonal_decorate_tree"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 500,
+		subscription_tier = 2,
 	},
 }
 ITEM_DEFINITIONS["seasonal_festive_firework"] = {
@@ -13,7 +13,7 @@ ITEM_DEFINITIONS["seasonal_festive_firework"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 500,
+		subscription_tier = 2,
 	},
 }
 ITEM_DEFINITIONS["seasonal_firecrackers"] = {
@@ -22,7 +22,7 @@ ITEM_DEFINITIONS["seasonal_firecrackers"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 500,
+		subscription_tier = 2,
 	},
 }
 ITEM_DEFINITIONS["seasonal_summon_cny_balloon"] = {
@@ -31,7 +31,7 @@ ITEM_DEFINITIONS["seasonal_summon_cny_balloon"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 500,
+		subscription_tier = 2,
 	},
 }
 ITEM_DEFINITIONS["seasonal_summon_cny_tree"] = {
@@ -40,7 +40,7 @@ ITEM_DEFINITIONS["seasonal_summon_cny_tree"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 500,
+		subscription_tier = 2,
 	},
 }
 ITEM_DEFINITIONS["seasonal_summon_dragon"] = {
@@ -49,7 +49,7 @@ ITEM_DEFINITIONS["seasonal_summon_dragon"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 500,
+		subscription_tier = 2,
 	},
 }
 ITEM_DEFINITIONS["seasonal_summon_snowman"] = {
@@ -58,7 +58,7 @@ ITEM_DEFINITIONS["seasonal_summon_snowman"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 500,
+		subscription_tier = 2,
 	},
 }
 ITEM_DEFINITIONS["seasonal_summon_ti9_balloon"] = {
@@ -67,7 +67,7 @@ ITEM_DEFINITIONS["seasonal_summon_ti9_balloon"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 500,
+		subscription_tier = 2,
 	},
 }
 ITEM_DEFINITIONS["seasonal_throw_snowball"] = {
@@ -76,7 +76,7 @@ ITEM_DEFINITIONS["seasonal_throw_snowball"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 500,
+		subscription_tier = 2,
 	},
 }
 ITEM_DEFINITIONS["seasonal_ti9_banner"] = {
@@ -85,7 +85,7 @@ ITEM_DEFINITIONS["seasonal_ti9_banner"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 500,
+		subscription_tier = 2,
 	},
 }
 ITEM_DEFINITIONS["seasonal_ti9_instruments"] = {
@@ -94,7 +94,7 @@ ITEM_DEFINITIONS["seasonal_ti9_instruments"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 500,
+		subscription_tier = 2,
 	},
 }
 ITEM_DEFINITIONS["seasonal_ti9_monkey"] = {
@@ -103,7 +103,7 @@ ITEM_DEFINITIONS["seasonal_ti9_monkey"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 500,
+		subscription_tier = 2,
 	},
 }
 ITEM_DEFINITIONS["seasonal_ti9_shovel"] = {
@@ -112,6 +112,6 @@ ITEM_DEFINITIONS["seasonal_ti9_shovel"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 500,
+		subscription_tier = 2,
 	},
 }

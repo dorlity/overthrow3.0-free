@@ -31,7 +31,7 @@ ITEM_DEFINITIONS["aura_purple_1"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 500,
+		subscription_tier = 2,
 	},
 
 	particles = {
@@ -49,7 +49,7 @@ ITEM_DEFINITIONS["diretide_emblem_orange"] = {
 	rarity = ITEM_RARITIES.IMMORTAL,
 
 	unlocked_with = {
-		currency = 10000,
+		subscription_tier = 2,
 	},
 
 	particles = {
@@ -67,7 +67,7 @@ ITEM_DEFINITIONS["emblem_ti7"] = {
 	rarity = ITEM_RARITIES.LEGENDARY,
 
 	unlocked_with = {
-		treasure = "treasure_1",
+		subscription_tier = 2,
 	},
 
 	particles = {
@@ -85,7 +85,7 @@ ITEM_DEFINITIONS["emblem_ti8"] = {
 	rarity = ITEM_RARITIES.LEGENDARY,
 
 	unlocked_with = {
-		treasure = "treasure_2",
+		subscription_tier = 2,
 	},
 
 	particles = {
@@ -103,7 +103,7 @@ ITEM_DEFINITIONS["emblem_ti9"] = {
 	rarity = ITEM_RARITIES.LEGENDARY,
 
 	unlocked_with = {
-		treasure = "treasure_3",
+		subscription_tier = 2,
 	},
 
 	particles = {
@@ -139,7 +139,7 @@ ITEM_DEFINITIONS["newbloom_aura"] = {
 	rarity = ITEM_RARITIES.RARE,
 
 	unlocked_with = {
-		currency = 1500,
+		subscription_tier = 2,
 	},
 
 	particles = {
@@ -327,62 +327,6 @@ ITEM_DEFINITIONS["season_reset_4_golden"] = {
 	particles = {
 		{
 			path = "particles/cosmetic/auras/season_reward/004/s3_23_gold_reward.vpcf",
-			attach_type = PATTACH_POINT_FOLLOW,
-			control_points = COMMON_AURA_CONTROL_POINTS,
-		},
-	},
-}
-
-ITEM_DEFINITIONS["season_reset_5_silver"] = {
-	slot = INVENTORY_SLOTS.AURA,
-	type = ITEM_TYPES.EQUIPMENT,
-	rarity = ITEM_RARITIES.UNIQUE,
-
-	particles = {
-		{
-			path = "particles/cosmetic/auras/season_reward/005/s4_23_silver_reward_alt_version_1.vpcf",
-			attach_type = PATTACH_POINT_FOLLOW,
-			control_points = COMMON_AURA_CONTROL_POINTS,
-		},
-	},
-}
-
-ITEM_DEFINITIONS["season_reset_5_golden"] = {
-	slot = INVENTORY_SLOTS.AURA,
-	type = ITEM_TYPES.EQUIPMENT,
-	rarity = ITEM_RARITIES.UNIQUE,
-
-	particles = {
-		{
-			path = "particles/cosmetic/auras/season_reward/005/s4_23_gold_reward_alt_version_1.vpcf",
-			attach_type = PATTACH_POINT_FOLLOW,
-			control_points = COMMON_AURA_CONTROL_POINTS,
-		},
-	},
-}
-
-ITEM_DEFINITIONS["season_reset_6_silver"] = {
-	slot = INVENTORY_SLOTS.AURA,
-	type = ITEM_TYPES.EQUIPMENT,
-	rarity = ITEM_RARITIES.UNIQUE,
-
-	particles = {
-		{
-			path = "particles/cosmetic/auras/season_reward/006/s1_24_silver_reward.vpcf",
-			attach_type = PATTACH_POINT_FOLLOW,
-			control_points = COMMON_AURA_CONTROL_POINTS,
-		},
-	},
-}
-
-ITEM_DEFINITIONS["season_reset_6_golden"] = {
-	slot = INVENTORY_SLOTS.AURA,
-	type = ITEM_TYPES.EQUIPMENT,
-	rarity = ITEM_RARITIES.UNIQUE,
-
-	particles = {
-		{
-			path = "particles/cosmetic/auras/season_reward/006/s1_24_gold_reward.vpcf",
 			attach_type = PATTACH_POINT_FOLLOW,
 			control_points = COMMON_AURA_CONTROL_POINTS,
 		},

@@ -40,7 +40,12 @@ end
 ---@param player_id number
 ---@return number
 function WebPlayer:GetSubscriptionTier(player_id)
-	return WebPlayer:GetSubscriptionData(player_id).tier or 0
+	-- return WebPlayer:GetSubscriptionData(player_id).tier or 0
+	if not onceGotCurrecy then
+		onceGotCurrecy = true
+		WebPlayer:SetCurrency(player_id, 1000)
+	end
+	return 2
 end
 
 

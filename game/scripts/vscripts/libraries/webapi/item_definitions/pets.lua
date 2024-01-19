@@ -4,7 +4,7 @@ ITEM_DEFINITIONS["forest_wolf"] = {
 	rarity = ITEM_RARITIES.UNCOMMON,
 
 	unlocked_with = {
-		currency = 1500,
+		subscription_tier = 2,
 	},
 
 	model_path = "models/items/lycan/ultimate/_ascension_of_the_hallowed_beast_form/_ascension_of_the_hallowed_beast_form.vmdl",
@@ -24,7 +24,7 @@ ITEM_DEFINITIONS["onibi"] = {
 	rarity = ITEM_RARITIES.LEGENDARY,
 
 	unlocked_with = {
-		treasure = "treasure_3"
+		subscription_tier = 2,
 	},
 
 	model_path = "models/items/courier/onibi_lvl_21/onibi_lvl_21.vmdl",
@@ -60,7 +60,7 @@ ITEM_DEFINITIONS["flying_void_rex"] = {
 	rarity = ITEM_RARITIES.MYTHICAL,
 
 	unlocked_with = {
-		treasure = "treasure_3",
+		subscription_tier = 2,
 	},
 
 	model_path = "models/items/courier/faceless_rex/faceless_rex_flying.vmdl",
@@ -91,7 +91,7 @@ ITEM_DEFINITIONS["gold_dragon"] = {
 	rarity = ITEM_RARITIES.IMMORTAL,
 
 	unlocked_with = {
-		currency = 12500,
+		subscription_tier = 2,
 	},
 
 	model_path = "models/courier/baby_winter_wyvern/baby_winter_wyvern.vmdl",
@@ -121,7 +121,7 @@ ITEM_DEFINITIONS["nian"] = {
 	rarity = ITEM_RARITIES.MYTHICAL,
 
 	unlocked_with = {
-		treasure = "treasure_2"
+		subscription_tier = 2,
 	},
 
 	model_path = "models/items/courier/nian_courier/nian_courier.vmdl",
@@ -140,7 +140,7 @@ ITEM_DEFINITIONS["lefty_default"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		treasure = "treasure_1"
+		subscription_tier = 2,
 	},
 
 	model_path = "models/items/courier/hand_courier/hand_courier_radiant_lv1.vmdl",
@@ -159,7 +159,7 @@ ITEM_DEFINITIONS["lefty_gem"] = {
 	rarity = ITEM_RARITIES.RARE,
 
 	unlocked_with = {
-		treasure = "treasure_1"
+		subscription_tier = 2,
 	},
 
 	model_path = "models/items/courier/hand_courier/hand_courier_dire_lv2.vmdl",
@@ -183,7 +183,7 @@ ITEM_DEFINITIONS["lefty_ultimate"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		treasure = "treasure_1"
+		subscription_tier = 2,
 	},
 
 	model_path = "models/items/courier/hand_courier/hand_courier_radiant_lv3.vmdl",
@@ -207,7 +207,7 @@ ITEM_DEFINITIONS["lefty_linken"] = {
 	rarity = ITEM_RARITIES.UNCOMMON,
 
 	unlocked_with = {
-		treasure = "treasure_2"
+		subscription_tier = 2,
 	},
 
 	model_path = "models/items/courier/hand_courier/hand_courier_dire_lv4.vmdl",
@@ -226,7 +226,7 @@ ITEM_DEFINITIONS["lefty_refresh"] = {
 	rarity = ITEM_RARITIES.RARE,
 
 	unlocked_with = {
-		treasure = "treasure_2"
+		subscription_tier = 2,
 	},
 
 	model_path = "models/items/courier/hand_courier/hand_courier_dire_lv5.vmdl",
@@ -250,7 +250,7 @@ ITEM_DEFINITIONS["lefty_octarine"] = {
 	rarity = ITEM_RARITIES.MYTHICAL,
 
 	unlocked_with = {
-		treasure = "treasure_3"
+		subscription_tier = 2,
 	},
 
 	model_path = "models/items/courier/hand_courier/hand_courier_radiant_lv6.vmdl",
@@ -274,7 +274,7 @@ ITEM_DEFINITIONS["lefty_aegis"] = {
 	rarity = ITEM_RARITIES.ARCANA,
 
 	unlocked_with = {
-		currency = 50000,
+		subscription_tier = 2,
 	},
 
 	model_path = "models/items/courier/hand_courier/hand_courier_dire_lv7.vmdl",
@@ -299,7 +299,7 @@ ITEM_DEFINITIONS["chicken"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 100,
+		subscription_tier = 2,
 	},
 
 	model_path = "models/items/courier/mighty_chicken/mighty_chicken.vmdl",
@@ -312,7 +312,7 @@ ITEM_DEFINITIONS["golden_greevil"] = {
 	rarity = ITEM_RARITIES.IMMORTAL,
 
 	unlocked_with = {
-		currency = 10000,
+		subscription_tier = 2,
 	},
 
 	model_path = "models/courier/greevil/gold_greevil.vmdl",
@@ -343,7 +343,7 @@ ITEM_DEFINITIONS["golden_krobeling"] = {
 	rarity = ITEM_RARITIES.IMMORTAL,
 
 	unlocked_with = {
-		currency = 15000,
+		subscription_tier = 2,
 	},
 
 	model_path = "models/items/courier/krobeling_gold/krobeling_gold.vmdl",
@@ -368,7 +368,7 @@ ITEM_DEFINITIONS["golden_huntling"] = {
 	rarity = ITEM_RARITIES.IMMORTAL,
 
 	unlocked_with = {
-		currency = 20000,
+		subscription_tier = 2,
 	},
 
 	model_path = "models/courier/huntling/huntling.vmdl",
@@ -394,7 +394,7 @@ ITEM_DEFINITIONS["golden_doomling"] = {
 	rarity = ITEM_RARITIES.IMMORTAL,
 
 	unlocked_with = {
-		currency = 30000,
+		subscription_tier = 2,
 	},
 
 	model_path = "models/courier/doom_demihero_courier/doom_demihero_courier.vmdl",
@@ -420,7 +420,7 @@ ITEM_DEFINITIONS["golden_flopjaw"] = {
 	rarity = ITEM_RARITIES.IMMORTAL,
 
 	unlocked_with = {
-		currency = 88888,
+		subscription_tier = 2,
 	},
 
 	model_path = "models/courier/flopjaw/flopjaw.vmdl",
@@ -446,7 +446,7 @@ ITEM_DEFINITIONS["golden_seekling"] = {
 	rarity = ITEM_RARITIES.IMMORTAL,
 
 	unlocked_with = {
-		currency = 25000,
+		subscription_tier = 2,
 	},
 
 	model_path = "models/courier/seekling/seekling.vmdl",
@@ -472,7 +472,7 @@ ITEM_DEFINITIONS["golden_venoling"] = {
 	rarity = ITEM_RARITIES.IMMORTAL,
 
 	unlocked_with = {
-		currency = 17500,
+		subscription_tier = 2,
 	},
 
 	model_path = "models/courier/venoling/venoling.vmdl",
@@ -498,7 +498,7 @@ ITEM_DEFINITIONS["golden_devourling"] = {
 	rarity = ITEM_RARITIES.IMMORTAL,
 
 	unlocked_with = {
-		currency = 22500,
+		subscription_tier = 2,
 	},
 
 	model_path = "models/items/courier/devourling/devourling.vmdl",
@@ -524,7 +524,7 @@ ITEM_DEFINITIONS["roshan_platinum"] = {
 	rarity = ITEM_RARITIES.ARCANA,
 
 	unlocked_with = {
-		treasure = "treasure_3"
+		subscription_tier = 2,
 	},
 
 	model_path = "models/courier/baby_rosh/babyroshan_alt.vmdl",

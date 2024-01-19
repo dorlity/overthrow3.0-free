@@ -56,7 +56,7 @@ ITEM_DEFINITIONS["high_five_diretide"] = {
 	rarity = ITEM_RARITIES.UNCOMMON,
 
 	unlocked_with = {
-		treasure = "treasure_1"
+		subscription_tier = 2,
 	},
 
 	-- these are controlled by high_five_custom ability
@@ -82,7 +82,7 @@ ITEM_DEFINITIONS["high_five_fire"] = {
 	rarity = ITEM_RARITIES.RARE,
 
 	unlocked_with = {
-		treasure = "treasure_3",
+		subscription_tier = 2,
 	},
 
 	-- these are controlled by high_five_custom ability
@@ -108,7 +108,7 @@ ITEM_DEFINITIONS["high_five_ice"] = {
 	rarity = ITEM_RARITIES.UNCOMMON,
 
 	unlocked_with = {
-		treasure = "treasure_1",
+		subscription_tier = 2,
 	},
 
 	-- these are controlled by high_five_custom ability
@@ -134,7 +134,7 @@ ITEM_DEFINITIONS["high_five_midas"] = {
 	rarity = ITEM_RARITIES.IMMORTAL,
 
 	unlocked_with = {
-		currency = 9999,
+		subscription_tier = 2,
 	},
 
 	-- these are controlled by high_five_custom ability
@@ -160,7 +160,7 @@ ITEM_DEFINITIONS["high_five_newbloom"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 250,
+		subscription_tier = 2,
 	},
 
 	-- these are controlled by high_five_custom ability
@@ -186,7 +186,7 @@ ITEM_DEFINITIONS["high_five_paw"] = {
 	rarity = ITEM_RARITIES.RARE,
 
 	unlocked_with = {
-		treasure = "treasure_2"
+		subscription_tier = 2,
 	},
 
 	-- these are controlled by high_five_custom ability
@@ -212,7 +212,7 @@ ITEM_DEFINITIONS["high_five_winter"] = {
 	rarity = ITEM_RARITIES.UNCOMMON,
 
 	unlocked_with = {
-		treasure = "treasure_2",
+		subscription_tier = 2,
 	},
 
 	-- these are controlled by high_five_custom ability
@@ -238,7 +238,7 @@ ITEM_DEFINITIONS["high_five_rgb"] = {
 	rarity = ITEM_RARITIES.ARCANA,
 
 	unlocked_with = {
-		currency = 6969,
+		subscription_tier = 2,
 	},
 
 	-- these are controlled by high_five_custom ability

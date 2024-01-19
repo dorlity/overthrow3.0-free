@@ -75,7 +75,7 @@ ITEM_DEFINITIONS["bp_legendary_lagresse"] = {
 	type = ITEM_TYPES.CONSUMABLE,
 	rarity = ITEM_RARITIES.LEGENDARY,
 	unlocked_with = {
-		currency = 350
+		currency = 250
 	},
 
 	on_consume = Resolve("OnLegendaryLagresseConsumed", "BattlePass"),
@@ -87,7 +87,7 @@ ITEM_DEFINITIONS["bp_breathtaking_benefaction"] = {
 	rarity = ITEM_RARITIES.ARCANA,
 
 	unlocked_with = {
-		currency = 700
+		currency = 500
 	},
 
 	on_consume = Resolve("OnBreathtakingBenefactionUsed", "BattlePass"),

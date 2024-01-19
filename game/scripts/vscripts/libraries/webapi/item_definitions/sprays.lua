@@ -34,7 +34,7 @@ ITEM_DEFINITIONS["kekw_spray"] = {
 	rarity = ITEM_RARITIES.LEGENDARY,
 
 	unlocked_with = {
-		currency = 5000,
+		subscription_tier = 2,
 	},
 
 	particles = {
@@ -49,7 +49,7 @@ ITEM_DEFINITIONS["kekwait_spray"] = {
 	rarity = ITEM_RARITIES.RARE,
 
 	unlocked_with = {
-		currency = 2000,
+		subscription_tier = 2,
 	},
 
 	particles = {
@@ -64,7 +64,7 @@ ITEM_DEFINITIONS["monkas_spray"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 1000,
+		subscription_tier = 2,
 	},
 
 	particles = {
@@ -79,7 +79,7 @@ ITEM_DEFINITIONS["omegalul_spray"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 1000,
+		subscription_tier = 2,
 	},
 
 	particles = {
@@ -94,7 +94,7 @@ ITEM_DEFINITIONS["pogu_spray"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 1000,
+		subscription_tier = 2,
 	},
 
 	particles = {
@@ -109,7 +109,7 @@ ITEM_DEFINITIONS["pudge_mom_basher_spray"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 1000,
+		subscription_tier = 2,
 	},
 
 	particles = {
@@ -124,7 +124,7 @@ ITEM_DEFINITIONS["pudge_shapka_spray"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 1000,
+		subscription_tier = 2,
 	},
 
 	particles = {
@@ -139,7 +139,7 @@ ITEM_DEFINITIONS["roflan_spray"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 1000,
+		subscription_tier = 2,
 	},
 
 	particles = {
@@ -154,7 +154,7 @@ ITEM_DEFINITIONS["pepega_spray"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		currency = 1000,
+		subscription_tier = 2,
 	},
 
 	particles = {

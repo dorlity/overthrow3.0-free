@@ -35,7 +35,7 @@ TEAMS_LAYOUTS = {
 		abandon_kill_goal_reduction = 2,
 		kills_by_vote = 2,
 		time_by_vote = 30,
-		game_base_duration = 1200,
+		game_base_duration = 1500,
 		respawn_time = {
 			3, 3
 		},
@@ -78,11 +78,11 @@ TEAMS_LAYOUTS = {
 		},
 		ring_radius = 1100,
 		overboss_throw_chance = 3, -- x2 on FFA map
-		kill_goal = 30,
+		kill_goal = 55,
 		abandon_kill_goal_reduction = 2,
 		kills_by_vote = 1,
 		time_by_vote = 30,
-		game_base_duration = 1200,
+		game_base_duration = 1500,
 		respawn_time = {
 			9, 8, 7, 6, 5, 4, 3, 2
 		},
@@ -126,11 +126,11 @@ TEAMS_LAYOUTS = {
 		},
 		ring_radius = 1050,
 		overboss_throw_chance = 3.33,
-		kill_goal = 50,
+		kill_goal = 55,
 		abandon_kill_goal_reduction = 2,
 		kills_by_vote = 2,
 		time_by_vote = 30,
-		game_base_duration = 1200,
+		game_base_duration = 1500,
 		respawn_time = {
 			10, 8, 6, 4, 2
 		},
@@ -171,11 +171,11 @@ TEAMS_LAYOUTS = {
 		},
 		ring_radius = 1400,
 		overboss_throw_chance = 2,
-		kill_goal = 90,
+		kill_goal = 55,
 		abandon_kill_goal_reduction = 3,
 		kills_by_vote = 2,
 		time_by_vote = 20,
-		game_base_duration = 1200,
+		game_base_duration = 1500,
 		respawn_time = {
 			10, 6, 2
 		},
@@ -215,11 +215,11 @@ TEAMS_LAYOUTS = {
 		},
 		ring_radius = 1400,
 		overboss_throw_chance = 2,
-		kill_goal = 125,
+		kill_goal = 55,
 		abandon_kill_goal_reduction = 4,
 		kills_by_vote = 2,
 		time_by_vote = 12.5,
-		game_base_duration = 1200,
+		game_base_duration = 1500,
 		respawn_time = {
 			10, 6, 2
 		},

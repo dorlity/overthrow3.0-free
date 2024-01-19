@@ -166,7 +166,7 @@ function FlyingTreasureDrop:TreasureDrop(treasure_courier)
 	if table.count(self.current_vision_revealers[treasure_courier.spawn_id]) == 0 then self.current_vision_revealers[treasure_courier.spawn_id] = nil end
 
     -- Spawn the orb capture area at the selected item spawn location
-    local capture_point = GameMode:SpawnOrbDrop(spawn_point, UPGRADE_RARITY_EPIC, false, function()
+    local capture_point = GameMode:SpawnOrbDrop(spawn_point, UPGRADE_RARITY_RARE, false, function()
 		-- on orb capture - remove fow revealer and path particles
 		self:DestroyPathParticles(treasure_courier.spawn_id, treasure_courier.target_index)
 		UTIL_Remove(vision_revealer)

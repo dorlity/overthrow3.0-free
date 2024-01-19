@@ -112,8 +112,12 @@ function WebInventory:AddItem(player_id, item_data)
 	local definition = WebInventory:GetItemDefinition(item_data.name)
 	if not definition then return end
 
+	local newCount = item_data.count
+	if WebInventory.players_items[player_id][item_data.name] then
+		newCount = WebInventory.players_items[player_id][item_data.name].count + item_data.count
+	end
 	WebInventory.players_items[player_id][item_data.name] = {
-		count = item_data.count,
+		count = newCount,
 	}
 end
 
@@ -198,7 +202,6 @@ end
 -- performs request to backend to reduce item count by `item_count` or 1 (with all appropriate validations)
 -- calls passed callback when request succeeds
 function WebInventory:ConsumeItem(player_id, item_name, item_count, on_item_used)
-	local steam_id = tostring(PlayerResource:GetSteamID(player_id))
 	if not WebInventory.players_items[player_id] or not WebInventory.players_items[player_id][item_name] then return end
 
 	local _item_count = item_count or 1
@@ -207,27 +210,32 @@ function WebInventory:ConsumeItem(player_id, item_name, item_count, on_item_used
 		DisplayError(player_id, "#web_inventory_not_enough_items")
 		return
 	end
+	local data = {["name"]=item_name,["new_count"]=WebInventory.players_items[player_id][item_name].count-1}
+	WebInventory.players_items[player_id][item_name].count = data.new_count
+	WebInventory:UpdateClient(player_id)
+	if on_item_used then
+		ErrorTracking.Try(on_item_used, data)
+	end
+	-- WebApi:Send(
+	-- 	"api/lua/inventory/use_item",
+	-- 	{
+	-- 		steam_id = steam_id,
+	-- 		item_name = item_name,
+	-- 		spent_count = _item_count,
+	-- 	},
+	-- 	function(data)
+	-- 		print("[WebInventory] successfully consumed item", item_name, _item_count, data.new_count)
+	-- 		WebInventory.players_items[player_id][data.name].count = data.new_count
+	-- 		WebInventory:UpdateClient(player_id)
 
-	WebApi:Send(
-		"api/lua/inventory/use_item",
-		{
-			steam_id = steam_id,
-			item_name = item_name,
-			spent_count = _item_count,
-		},
-		function(data)
-			print("[WebInventory] successfully consumed item", item_name, _item_count, data.new_count)
-			WebInventory.players_items[player_id][data.name].count = data.new_count
-			WebInventory:UpdateClient(player_id)
-
-			if on_item_used then
-				ErrorTracking.Try(on_item_used, data)
-			end
-		end,
-		function(err)
-			print("[WebInventory] failed to use item", item_name, _item_count)
-		end
-	)
+	-- 		if on_item_used then
+	-- 			ErrorTracking.Try(on_item_used, data)
+	-- 		end
+	-- 	end,
+	-- 	function(err)
+	-- 		print("[WebInventory] failed to use item", item_name, _item_count)
+	-- 	end
+	-- )
 end
 
 
@@ -237,27 +245,39 @@ function WebInventory:PurchaseItem(player_id, item_name, total_cost, count)
 		return
 	end
 
-	local steam_id = tostring(PlayerResource:GetSteamID(player_id))
+	WebPlayer:SetCurrency(player_id, WebPlayer:GetCurrency(player_id) - total_cost)
+	WebPlayer:UpdateClient(player_id)
 
-	WebApi:Send(
-		"api/lua/inventory/purchase_item",
-		{
-			steam_id = steam_id,
-			item_name = item_name,
-			total_cost = total_cost,
-			purchased_count = count or 1
-		},
-		function(data)
-			print("[WebInventory] successfully purchased item", item_name)
-			WebPlayer:SetCurrency(player_id, data.new_currency)
-			WebPlayer:UpdateClient(player_id)
-			WebInventory:AddItem(player_id, data.item)
-			WebInventory:UpdateClient(player_id)
-		end,
-		function(err)
-			print("[WebInventory] failed to purchase item", player_id, item_name, total_cost)
-		end
-	)
+	local current_count = 0
+	if WebInventory:_HasItem(player_id, item_name) then
+		current_count = WebInventory.players_items[player_id][item_name].count
+	end
+	local items_send = {
+		["name"] = item_name,
+		["count"] = current_count + count
+	}
+	WebInventory:AddItem(player_id, items_send)
+	WebInventory:UpdateClient(player_id)
+
+	-- WebApi:Send(
+	-- 	"api/lua/inventory/purchase_item",
+	-- 	{
+	-- 		steam_id = steam_id,
+	-- 		item_name = item_name,
+	-- 		total_cost = total_cost,
+	-- 		purchased_count = count or 1
+	-- 	},
+	-- 	function(data)
+	-- 		print("[WebInventory] successfully purchased item", item_name)
+	-- 		WebPlayer:SetCurrency(player_id, data.new_currency)
+	-- 		WebPlayer:UpdateClient(player_id)
+	-- 		WebInventory:AddItem(player_id, data.item)
+	-- 		WebInventory:UpdateClient(player_id)
+	-- 	end,
+	-- 	function(err)
+	-- 		print("[WebInventory] failed to purchase item", player_id, item_name, total_cost)
+	-- 	end
+	-- )
 end
 
 

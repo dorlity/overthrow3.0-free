@@ -29,7 +29,7 @@ ITEM_DEFINITIONS["kill_effect_blast_zone"] = {
 	rarity = ITEM_RARITIES.MYTHICAL,
 
 	unlocked_with = {
-		treasure = "treasure_1",
+		subscription_tier = 2,
 	},
 
 	particle_variants = {
@@ -66,7 +66,7 @@ ITEM_DEFINITIONS["kill_effect_bloodburst"] = {
 	rarity = ITEM_RARITIES.ARCANA,
 
 	unlocked_with = {
-		treasure = "treasure_2"
+		subscription_tier = 2,
 	},
 
 	particle_variants = {
@@ -103,7 +103,7 @@ ITEM_DEFINITIONS["kill_effect_blue_whirl"] = {
 	rarity = ITEM_RARITIES.RARE,
 
 	unlocked_with = {
-		currency = 1500,
+		subscription_tier = 2,
 	},
 
 	particle_variants = {
@@ -140,7 +140,7 @@ ITEM_DEFINITIONS["kill_effect_collapse"] = {
 	rarity = ITEM_RARITIES.UNCOMMON,
 
 	unlocked_with = {
-		treasure = "treasure_2"
+		subscription_tier = 2,
 	},
 
 	particle_variants = {
@@ -177,7 +177,7 @@ ITEM_DEFINITIONS["kill_effect_diretide_bats"] = {
 	rarity = ITEM_RARITIES.RARE,
 
 	unlocked_with = {
-		currency = 2500,
+		subscription_tier = 2,
 	},
 
 	particle_variants = {
@@ -203,7 +203,7 @@ ITEM_DEFINITIONS["kill_effect_dissolution"] = {
 	rarity = ITEM_RARITIES.UNCOMMON,
 
 	unlocked_with = {
-		treasure = "treasure_1"
+		subscription_tier = 2,
 	},
 
 	particle_variants = {
@@ -229,7 +229,7 @@ ITEM_DEFINITIONS["kill_effect_glade_grave"] = {
 	rarity = ITEM_RARITIES.COMMON,
 
 	unlocked_with = {
-		treasure = "treasure_1",
+		subscription_tier = 2,
 	},
 
 	particle_variants = {
@@ -255,7 +255,7 @@ ITEM_DEFINITIONS["kill_effect_golden_touch"] = {
 	rarity = ITEM_RARITIES.IMMORTAL,
 
 	unlocked_with = {
-		currency = 10000,
+		subscription_tier = 2,
 	},
 
 	particle_variants = {
@@ -293,7 +293,7 @@ ITEM_DEFINITIONS["kill_effect_incineration"] = {
 	rarity = ITEM_RARITIES.RARE,
 
 	unlocked_with = {
-		treasure = "treasure_3",
+		subscription_tier = 2,
 	},
 
 	particle_variants = {
@@ -330,7 +330,7 @@ ITEM_DEFINITIONS["kill_effect_meltdown"] = {
 	rarity = ITEM_RARITIES.MYTHICAL,
 
 	unlocked_with = {
-		treasure = "treasure_2"
+		subscription_tier = 2,
 	},
 
 	particle_variants = {
@@ -356,7 +356,7 @@ ITEM_DEFINITIONS["kill_effect_raze"] = {
 	rarity = ITEM_RARITIES.MYTHICAL,
 
 	unlocked_with = {
-		treasure = "treasure_3"
+		subscription_tier = 2,
 	},
 
 	particle_variants = {
@@ -381,7 +381,7 @@ ITEM_DEFINITIONS["kill_effect_snowstorm"] = {
 	rarity = ITEM_RARITIES.UNCOMMON,
 
 	unlocked_with = {
-		currency = 1000,
+		subscription_tier = 2,
 	},
 
 	particle_variants = {
@@ -406,7 +406,7 @@ ITEM_DEFINITIONS["kill_effect_sparkles"] = {
 	rarity = ITEM_RARITIES.UNCOMMON,
 
 	unlocked_with = {
-		subscription_tier = 1,
+		subscription_tier = 2,
 	},
 
 	particle_variants = {
@@ -431,7 +431,7 @@ ITEM_DEFINITIONS["kill_effect_supernova"] = {
 	rarity = ITEM_RARITIES.LEGENDARY,
 
 	unlocked_with = {
-		treasure = "treasure_3"
+		subscription_tier = 2,
 	},
 
 	particle_variants = {

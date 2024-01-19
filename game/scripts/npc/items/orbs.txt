@@ -14,7 +14,7 @@
 		"AbilityCastRange"				"100"
 		"AbilityCastPoint"				"0.0"
 
-		"ItemCost"						"2000"
+		"ItemCost"						"1500"
 		"ItemPurchasable"				"1"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
@@ -39,7 +39,7 @@
 		"AbilityCastRange"				"100"
 		"AbilityCastPoint"				"0.0"
 
-		"ItemCost"						"4000"
+		"ItemCost"						"3500"
 		"ItemPurchasable"				"1"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
@@ -64,7 +64,7 @@
 		"AbilityCastRange"				"100"
 		"AbilityCastPoint"				"0.0"
 
-		"ItemCost"						"8000"
+		"ItemCost"						"4000"
 		"ItemPurchasable"				"1"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
@@ -88,7 +88,7 @@
 		"AbilityCastRange"				"100"
 		"AbilityCastPoint"				"0.0"
 
-		"ItemCost"						"3000"
+		"ItemCost"						"1500"
 		"ItemPurchasable"				"1"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
@@ -113,7 +113,7 @@
 		"AbilityCastRange"				"100"
 		"AbilityCastPoint"				"0.0"
 
-		"ItemCost"						"6000"
+		"ItemCost"						"3500"
 		"ItemPurchasable"				"1"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
@@ -138,7 +138,7 @@
 		"AbilityCastRange"				"100"
 		"AbilityCastPoint"				"0.0"
 
-		"ItemCost"						"12000"
+		"ItemCost"						"4000"
 		"ItemPurchasable"				"1"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
@@ -163,7 +163,7 @@
 		"AbilityCastRange"				"100"
 		"AbilityCastPoint"				"0.0"
 
-		"ItemCost"						"6000"
+		"ItemCost"						"1500"
 		"ItemPurchasable"				"1"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
@@ -188,7 +188,7 @@
 		"AbilityCastRange"				"100"
 		"AbilityCastPoint"				"0.0"
 
-		"ItemCost"						"12000"
+		"ItemCost"						"3500"
 		"ItemPurchasable"				"1"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
@@ -213,7 +213,7 @@
 		"AbilityCastRange"				"100"
 		"AbilityCastPoint"				"0.0"
 
-		"ItemCost"						"24000"
+		"ItemCost"						"4000"
 		"ItemPurchasable"				"1"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"

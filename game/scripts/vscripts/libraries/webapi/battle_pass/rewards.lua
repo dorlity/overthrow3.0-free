@@ -33,7 +33,7 @@ BATTLE_PASS_REWARDS["0"] = {
 	},
 	[8] = {
 		item_name = "bp_reroll",
-		count = 8,
+		count = 200,
 	},
 	[9] = {
 		item_name = "bp_conqueror_presence",
@@ -64,7 +64,7 @@ BATTLE_PASS_REWARDS["0"] = {
 	},
 	[16] = {
 		item_name = "bp_reroll",
-		count = 8,
+		count = 200,
 	},
 	[17] = {
 		item_name = "bp_early_bird_charm",
@@ -95,7 +95,7 @@ BATTLE_PASS_REWARDS["0"] = {
 	},
 	[24] = {
 		item_name = "bp_reroll",
-		count = 8,
+		count = 200,
 	},
 	[25] = {
 		item_name = "bp_lucky_trinket_epic",
@@ -103,7 +103,7 @@ BATTLE_PASS_REWARDS["0"] = {
 	},
 	[26] = {
 		item_name = "bp_reroll",
-		count = 8,
+		count = 200,
 	},
 	[27] = {
 		item_name = "bp_early_bird_charm",

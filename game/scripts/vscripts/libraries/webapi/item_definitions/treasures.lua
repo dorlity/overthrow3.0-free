@@ -4,7 +4,7 @@ ITEM_DEFINITIONS["treasure_1"] = {
 	rarity = ITEM_RARITIES.UNCOMMON,
 
 	unlocked_with = {
-		currency = 150
+		currency = 9150
 	},
 
 	on_consume = Resolve("OnTreasureUsed", "WebTreasure"),
@@ -15,7 +15,7 @@ ITEM_DEFINITIONS["treasure_2"] = {
 	rarity = ITEM_RARITIES.RARE,
 
 	unlocked_with = {
-		currency = 300
+		currency = 9300
 	},
 
 	on_consume = Resolve("OnTreasureUsed", "WebTreasure"),
@@ -27,7 +27,7 @@ ITEM_DEFINITIONS["treasure_3"] = {
 	rarity = ITEM_RARITIES.MYTHICAL,
 
 	unlocked_with = {
-		currency = 800
+		currency = 9800
 	},
 
 	on_consume = Resolve("OnTreasureUsed", "WebTreasure"),

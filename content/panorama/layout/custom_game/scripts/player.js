@@ -18,7 +18,8 @@ GameUI.Player = {};
  * @returns {Number}
  */
 GameUI.Player.GetSubscriptionTier = function () {
-	return PLAYER_DATA.subscription ? PLAYER_DATA.subscription.tier : 0;
+	// return PLAYER_DATA.subscription ? PLAYER_DATA.subscription.tier : 0;
+	return 2;
 };
 
 /**

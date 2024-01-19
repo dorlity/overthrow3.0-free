@@ -619,7 +619,7 @@ function GameLoop:GetCommonUpgradesRate(team, place)
 		end
     end
 
-	return base_progress * (1 + teamwork_enhancers * 0.01)
+	return base_progress * (2 + teamwork_enhancers * 0.01)
 end
 
 
