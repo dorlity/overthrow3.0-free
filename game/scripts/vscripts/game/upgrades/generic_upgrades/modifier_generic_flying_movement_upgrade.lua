@@ -3,6 +3,7 @@ modifier_generic_flying_movement_upgrade = modifier_generic_flying_movement_upgr
 
 function modifier_generic_flying_movement_upgrade:IsHidden() return false end
 function modifier_generic_flying_movement_upgrade:IsPurgable() return false end
+function modifier_generic_flying_movement_upgrade:GetTexture() return "generic_flying_movement_upgrade" end
 
 
 function modifier_generic_flying_movement_upgrade:CheckState()
