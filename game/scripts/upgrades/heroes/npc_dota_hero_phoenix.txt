@@ -1,0 +1,156 @@
+"npc_dota_hero_phoenix"
+{
+	"phoenix_icarus_dive"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_special_values"
+			{
+				"hp_cost_perc"
+				{
+					"value" "-3"
+					"operator" "OP_MULTIPLY"
+
+					"multiplicative_target"			"0"
+					"multiplicative_base_value"		"15"
+				}
+			}
+		}
+		"damage_per_second"
+		{
+			"value" "45"
+			"operator" "OP_ADD"
+		}
+		"dash_length"
+		{
+			"value" "100"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"dash_width" "30"
+				"hit_radius" "30"
+				"burn_duration" "1"
+			}
+		}
+	}
+	"phoenix_fire_spirits"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_special_values"
+			{
+				"hp_cost_perc"
+				{
+					"value" "-4"
+					"operator" "OP_MULTIPLY"
+
+					"multiplicative_target"			"0"
+					"multiplicative_base_value"		"20"
+				}
+			}
+		}
+		"radius"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"attackspeed_slow" "-30"
+			}
+			"linked_abilities"
+			{
+				"phoenix_launch_fire_spirit"
+				{
+					"radius" "40"
+					"attackspeed_slow" "-30"
+				}
+			}
+		}
+		"damage_per_second"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"phoenix_launch_fire_spirit"
+				{
+					"damage_per_second" "30"
+				}
+			}
+		}
+	}
+	"phoenix_sun_ray"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_special_values"
+			{
+				"hp_cost_perc_per_second"
+				{
+					"value" "-1.2"
+					"operator" "OP_MULTIPLY"
+
+					"multiplicative_target"			"0"
+					"multiplicative_base_value"		"6"
+				}
+			}
+		}
+		"hp_perc_damage"
+		{
+			"value" "1.0"
+			"operator" "OP_MULTIPLY"
+
+			"multiplicative_target"			"25"
+			"multiplicative_base_value"		"7.75"
+			"linked_special_values"
+			{
+				"base_damage" "5"
+				"hp_perc_heal" "0.5"
+				"base_heal" "5"
+			}
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"blind_per_second" "1"
+			}
+		}
+	}
+	"phoenix_supernova"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "20"
+		}
+		"aura_radius"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"max_hero_attacks" "1"
+				"max_hero_attacks_scepter" "1"
+			}
+		}
+		"damage_per_sec"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+		}
+	}
+}

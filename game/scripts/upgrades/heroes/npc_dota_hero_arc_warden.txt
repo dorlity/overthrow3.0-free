@@ -1,0 +1,129 @@
+"npc_dota_hero_arc_warden"
+{
+	"arc_warden_flux"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_special_values"
+			{
+				"move_speed_slow_pct"
+				{
+					"value"		"5"
+					"operator" "OP_MULTIPLY"
+
+					"multiplicative_target"			"100"
+					"multiplicative_base_value"		"35"
+				}
+				"tempest_move_speed_slow_pct"
+				{
+					"value"		"5"
+					"operator" "OP_MULTIPLY"
+
+					"multiplicative_target"			"83"
+					"multiplicative_base_value"		"18"
+				}
+			}
+		}
+		"damage_per_second"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"tempest_damage_per_second"	"40"
+			}
+		}
+		"duration"
+		{
+			"value" "2"
+			"operator" "OP_ADD"
+			"max_count" "3"
+			"linked_special_values"
+			{
+				"search_radius"	"-75"
+			}
+		}
+	}
+	"arc_warden_magnetic_field"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"radius"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"attack_speed_bonus"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"attack_damage_bonus" "40"
+			}
+		}
+		"shard_magic_resist"
+		{
+			"value" "4"
+			"operator" "OP_MULTIPLY"
+
+			"multiplicative_target"			"100"
+			"multiplicative_base_value"		"40"
+			"linked_special_values"
+			{
+				"shard_slow_pct"
+				{
+					"value"		"3"
+					"operator" "OP_MULTIPLY"
+
+					"multiplicative_target"			"100"
+					"multiplicative_base_value"		"30"
+				}
+			}
+		}
+	}
+	"arc_warden_spark_wraith"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"wraith_speed_base"
+		{
+			"value" "75"
+			"operator" "OP_ADD"
+			"max_count" "4"
+			"linked_special_values"
+			{
+				"wraith_speed_tempest"	"75"
+			}
+		}
+		"spark_damage_base"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"spark_damage_tempest"	"60"
+			}
+		}
+	}
+	"arc_warden_tempest_double"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "6"
+		}
+	}
+}

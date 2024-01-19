@@ -1,0 +1,75 @@
+"npc_dota_hero_shadow_shaman"
+{
+	"shadow_shaman_ether_shock"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage"
+		{
+			"value" "65"
+			"operator" "OP_ADD"
+		}
+		"targets"
+		{
+			"value" "1"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"end_radius" "30"
+				"start_radius" "30"
+				"end_distance" "30"
+			}
+		}
+	}
+	"shadow_shaman_voodoo"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"damage_amp"
+		{
+			"value" "5"
+		}
+	}
+	"shadow_shaman_shackles_lua"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"total_damage"
+		{
+			"value" "75"
+			"operator" "OP_ADD"
+		}
+	}
+	"shadow_shaman_mass_serpent_ward_lua"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "7"
+		}
+		"ward_damage"
+		{
+			"value" "8"
+			"operator" "OP_ADD"
+		}
+		"ward_count"
+		{
+			"value" "0.5"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"min_rarity" "rare"
+		}
+	}
+}

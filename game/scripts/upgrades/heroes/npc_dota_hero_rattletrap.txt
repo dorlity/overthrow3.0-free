@@ -1,0 +1,105 @@
+"npc_dota_hero_rattletrap"
+{
+	"rattletrap_battery_assault"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "7"
+		}
+		"damage"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"rattletrap_power_cogs"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "4"
+			"linked_abilities"
+			{
+				"rattletrap_jetpack"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"damage"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"mana_burn" "30"
+			}
+			"linked_abilities"
+			{
+				"rattletrap_jetpack"
+				{
+					"bonus_speed" "5"
+				}
+			}
+		}
+		"magic_barrier"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"rattletrap_jetpack"
+				{
+					"turn_rate" "7.5"
+				}
+			}
+		}
+	}
+	"rattletrap_rocket_flare"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"damage"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+		}
+	}
+	"rattletrap_hookshot"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"damage"
+		{
+			"value" "75"
+			"operator" "OP_ADD"
+		}
+		"stun_radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+}

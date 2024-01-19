@@ -1,0 +1,299 @@
+"npc_dota_hero_invoker"
+{
+	"invoker_cold_snap"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+
+			"linked_special_values"
+			{
+				"duration" "1"
+			}
+			"linked_abilities"
+			{
+				"invoker_ice_wall"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+					"duration"
+					{
+						"value" "1"
+						"operator" "OP_ADD"
+					}
+					"wall_element_radius"
+					{
+						"value" "30"
+						"operator" "OP_ADD"
+					}
+				}
+			}
+		}
+		"freeze_damage"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+			
+			"linked_special_values"
+			{
+				"freeze_heal" "32"
+			}
+			"linked_abilities"
+			{
+				"invoker_ice_wall"
+				{
+					"damage_per_second" "20"
+				}
+			}
+		}
+	}
+	"invoker_tornado"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+			
+			"linked_special_values"
+			{
+				"area_of_effect" "30"
+				"vision_distance" "30"
+			}
+			
+			"linked_abilities"
+			{
+				"invoker_emp"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+					"area_of_effect" "35"
+				}
+			}
+		}
+		"base_damage"
+		{
+			"value" "85"
+			"operator" "OP_ADD"
+			
+			"linked_abilities"
+			{
+				"invoker_emp"
+				{
+					"mana_burned" "110"
+				}
+			}
+		}
+	}
+	"invoker_chaos_meteor"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			
+			"linked_abilities"
+			{
+				"invoker_deafening_blast"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+					"radius_start"
+					{
+						"value" "45"
+						"operator" "OP_MULTIPLY"
+
+						"multiplicative_target"			"625"
+						"multiplicative_base_value"		"175"
+					}
+					"radius_end"
+					{
+						"value" "45"
+						"operator" "OP_MULTIPLY"
+
+						"multiplicative_target"			"675"
+						"multiplicative_base_value"		"225"
+					}
+				}
+			}
+		}
+		"main_damage"
+		{
+			"value" "45"
+			"operator" "OP_ADD"
+			
+			"linked_special_values"
+			{
+				"burn_dps"
+				{
+					"value"			"9"
+					"operator"		"OP_ADD"
+				}
+			}
+			
+			"linked_abilities"
+			{
+				"invoker_deafening_blast"
+				{
+					"damage"
+					{
+						"value" "85"
+						"operator" "OP_ADD"
+					}
+				}
+			}
+		}
+	}
+	"invoker_alacrity"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+
+			"linked_special_values"
+			{
+				"duration" "1"
+			}
+			
+			"linked_abilities"
+			{
+				"invoker_forge_spirit"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+					"spirit_armor" "2"
+					"spirit_hp" "250"
+				}
+			}
+		}
+		"bonus_damage"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+
+			"linked_special_values"
+			{
+				"bonus_attack_speed" "15"
+			}
+			
+			"linked_abilities"
+			{
+				"invoker_forge_spirit"
+				{
+					"spirit_damage"
+					{
+						"value" "25"
+						"operator" "OP_ADD"
+					}
+					"armor_per_attack" "0.3"
+				}
+			}
+		}
+	}
+	"invoker_sun_strike"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+			
+			"linked_abilities"
+			{
+				"invoker_ghost_walk"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+					"area_of_effect"
+					{
+						"value" "30"
+						"operator" "OP_ADD"
+					}
+				}
+			}
+		}
+		"damage"
+		{
+			"value" "100"
+			"operator" "OP_ADD"
+			
+			"linked_abilities"
+			{
+				"invoker_ghost_walk"
+				{
+					"health_regen"
+					{
+						"value" "18"
+						"operator" "OP_ADD"
+					}
+					"mana_regen"
+					{
+						"value" "8"
+						"operator" "OP_ADD"
+					}
+				}
+			}
+		}
+	}
+	"invoker_quas"
+	{
+		"spell_lifesteal"
+		{
+			"value"			"1"
+			"operator" "OP_ADD"
+
+			"talents"
+			{
+				"special_bonus_unique_invoker_13"	"x2"
+			}
+			
+			"linked_abilities"
+			{
+				"invoker_wex"
+				{
+					"move_speed_per_instance"
+					{
+						"value"		"2"
+						"operator" "OP_ADD"
+
+						"talents"
+						{
+							"special_bonus_unique_invoker_13"	"x2"
+						}
+					}
+				}
+				"invoker_exort"
+				{
+					"spell_amp"
+					{
+						"value"		"1.5"
+						"operator" "OP_ADD"
+
+						"talents"
+						{
+							"special_bonus_unique_invoker_13"	"x2"
+						}
+					}
+				}
+			}
+		}
+	}
+}

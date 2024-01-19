@@ -1,0 +1,56 @@
+<!-- xml reconstructed by Source 2 Viewer 7.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/mail/mail.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/layout/custom_game/scripts/utils.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/mail/mail.vjs_c" />
+	</scripts>
+	<snippets>
+		<snippet name="mail_entry">
+			<Panel class="MailEntry">
+				<Panel class="MailIcon" />
+				<Label class="MailTopic" text="{s:topic}" />
+				<Panel class="MailReadStatus" />
+			</Panel>
+		</snippet>
+		<snippet name="attachment">
+			<Panel class="MailAttachment">
+				<Panel class="AttachmentContent">
+					<Image class="AttachmentImage" />
+					<Label class="AttachmentCount" text="{d:count}" />
+				</Panel>
+				<Image class="AttachmentClaimed" src="s2r://panorama/images/custom_game/mail/tick_png.vtex" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="Mail">
+		<Panel class="MailHeaderContainer">
+			<Label class="MailHeader" text="#mail_header" />
+			<Button class="CloseButton" onactivate="SetMailPanelState(false)" />
+		</Panel>
+		<Panel class="MailContainer">
+			<Panel class="OverlayShadow" hittest="false" />
+			<Panel id="MailList" />
+			<Panel id="ActiveMailTab">
+				<Panel class="MailTopicContainer">
+					<Label class="MailTopic MailTopicOnTab" text="{s:topic}" />
+					<Panel class="MailDetails">
+						<Label class="MailSource" text="#mail_source" html="true" />
+						<Label class="MailDate" text="{s:created_at}" />
+					</Panel>
+				</Panel>
+				<Label class="MailText" text="{s:text_content}" html="true" />
+				<Panel id="MailAttachments" />
+				<Panel class="MailButtons">
+					<Button class="MailButton" id="MailButton" onactivate="MailButtonPressed()">
+						<Label class="MailButtonLabel" text="{s:label}" />
+					</Button>
+				</Panel>
+			</Panel>
+			<Label class="NoMailsHint" text="#no_mails_hint" />
+		</Panel>
+	</Panel>
+</root>

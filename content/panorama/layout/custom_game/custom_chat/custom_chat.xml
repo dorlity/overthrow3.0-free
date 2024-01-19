@@ -1,0 +1,22 @@
+<!-- xml reconstructed by Source 2 Viewer 7.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/custom_chat/custom_chat.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/layout/custom_game/scripts/utils.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/custom_chat/custom_chat_const.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/custom_chat/custom_chat.vjs_c" />
+	</scripts>
+	<snippets>
+		<snippet name="Mastery">
+			<Panel class="Mastery">
+				<Panel id="MasteryBackground" />
+				<Panel id="MasteryTooltip" />
+				<Panel id="MasteryIcon" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="DummyHud" hittest="false" style="flow-children: down;" />
+</root>

@@ -1,0 +1,105 @@
+"npc_dota_hero_mirana"
+{
+	"mirana_starfall"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "11"
+			"operator" "OP_MULTIPLY"
+		}
+		"starfall_radius"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"starfall_secondary_radius" "35"
+			}
+			"linked_abilities"
+			{
+				"mirana_arrow"
+				{
+					"scepter_radius" "35"
+				}
+			}
+		}
+		"damage"
+		{
+			"value" "45"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"secondary_starfall_damage_percent" "5"
+			}
+		}
+	}
+	"mirana_arrow"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"arrow_bonus_damage"
+		{
+			"value" "75"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"scepter_starstorm_target_pct" "5"
+			}
+		}
+		"arrow_max_stunrange"
+		{
+			"value" "-375"
+			"operator" "OP_ADD"
+			"max_count" "4"
+		}
+	}
+	"mirana_leap"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"leap_bonus_duration"
+		{
+			"value" "1"
+			"operator" "OP_ADD"
+			"max_count" "6"
+			"linked_special_values"
+			{
+				"shard_radius" "90"
+				"shard_radius_end" "90"
+			}
+		}
+		"leap_speedbonus_as"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"leap_speedbonus" "8"
+				"shard_damage" "85"
+			}
+		}
+	}
+	"mirana_invis"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "6"
+		}
+		"bonus_movement_speed"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+			"max_count" "6"
+		}
+	}
+}

@@ -1,0 +1,84 @@
+"npc_dota_hero_elder_titan"
+{
+	"elder_titan_echo_stomp_lua"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "6"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"stomp_damage"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"wake_damage_limit" "100"
+			}
+		}
+	}
+	"elder_titan_ancestral_spirit_lua"
+	{
+		"move_pct_heroes"
+		{
+			"value" "1"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"move_pct_cap" "4"
+			}
+		}
+		"damage_heroes"
+		{
+			"value" "3"
+			"operator" "OP_ADD"
+		}
+		"armor_heroes"
+		{
+			"value" "0.6"
+			"operator" "OP_ADD"
+		}
+	}
+	"elder_titan_natural_order_lua"
+	{
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"elder_titan_earth_splitter"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"crack_width"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"vision_width" "60"
+			}
+		}
+		"damage_pct"
+		{
+			"value" "5"
+			"operator" "OP_MULTIPLY"
+
+			"multiplicative_target"			"50"
+			"multiplicative_base_value"		"0"
+		}
+	}
+}

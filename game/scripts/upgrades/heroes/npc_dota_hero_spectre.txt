@@ -1,0 +1,117 @@
+"npc_dota_hero_spectre"
+{
+	"spectre_spectral_dagger"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"damage"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+		}
+		"dagger_radius"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"speed"
+		{
+			"value" "80"
+			"operator" "OP_ADD"
+		}
+	}
+	"spectre_desolate"
+	{
+		"bonus_damage"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+		}
+		"radius"
+		{
+			"value" "-30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"spectre_dispersion"
+	{
+		"max_radius"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"spectre_haunt_single"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"illusion_damage_outgoing"
+		{
+			"value" "8"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"tooltip_outgoing" "8"
+			}
+			"linked_abilities"
+			{
+				"spectre_haunt_lua"
+				{
+					"illusion_damage_outgoing" "8"
+					"tooltip_outgoing" "8"
+				}
+			}
+		}
+		"illusion_damage_incoming"
+		{
+			"value" "-15"
+			"operator" "OP_MULTIPLY"
+			
+			"multiplicative_target"		"-100"
+			"multiplicative_base_value"		"100"
+
+			"linked_special_values"
+			{
+				"tooltip_illusion_total_damage_incoming"
+				{
+					"value"			"-15"
+
+					"operator" "OP_MULTIPLY"
+					"multiplicative_target"		"0"
+				}
+			}
+
+			"linked_abilities"
+			{
+				"spectre_haunt_lua"
+				{
+					"illusion_damage_incoming"
+					{
+						"value"			"-15"
+
+						"operator" "OP_MULTIPLY"
+						"multiplicative_target"		"-100"
+					}
+					"tooltip_illusion_total_damage_incoming"
+					{
+						"value"			"-15"
+
+						"operator" "OP_MULTIPLY"
+						"multiplicative_target"		"0"
+					}
+				}
+			}
+		}
+	}
+}

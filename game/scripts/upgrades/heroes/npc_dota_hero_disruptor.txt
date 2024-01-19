@@ -1,0 +1,98 @@
+"npc_dota_hero_disruptor"
+{
+	"disruptor_thunder_strike"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"shard_radius" "30"
+			}
+		}
+		"strike_damage"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+			
+			"linked_special_values"
+			{
+				"shard_attack_speed_bonus" "10"
+			}
+		}
+		"strikes"
+		{
+			"value" "1"
+			"operator" "OP_ADD"
+			"max_count" "6"
+			"linked_special_values"
+			{
+				"strike_interval"
+				{
+					"value" "-0.28"
+					"operator" "OP_MULTIPLY"
+
+					"multiplicative_target"			"0.7"
+					"multiplicative_base_value"		"2"
+				}
+			}
+		}
+	}
+	"disruptor_glimpse"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"max_damage"
+		{
+			"value" "120"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"min_damage" "20"
+			}
+		}
+	}
+	"disruptor_kinetic_field"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"disruptor_static_storm"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "15"
+		}
+		"damage_max"
+		{
+			"value" "70"
+			"operator" "OP_ADD"
+		}
+		"pulses"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+		}
+	}
+}

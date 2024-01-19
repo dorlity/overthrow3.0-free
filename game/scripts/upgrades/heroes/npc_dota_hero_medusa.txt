@@ -1,0 +1,90 @@
+"npc_dota_hero_medusa"
+{
+	"medusa_split_shot"
+	{
+		"damage_modifier"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+			"max_count" "1"
+			"linked_special_values"
+			{
+				"damage_modifier_tooltip" "5"
+			}
+		}
+		"arrow_count"
+		{
+			"value" "1"
+			"operator" "OP_ADD"
+		}
+	}
+	"medusa_mystic_snake"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "4"
+			"linked_abilities"
+			{
+				"medusa_cold_blooded"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"snake_damage"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+		}
+	}
+	"medusa_mana_shield"
+	{
+		"damage_per_mana"
+		{
+			"value" "0.08"
+			"operator" "OP_ADD"
+		}
+		"bonus_mana"
+		{
+			"value" "90"
+			"operator" "OP_ADD"
+		}
+	}
+	"medusa_stone_gaze"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"radius"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"bonus_physical_damage"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+		}
+		"speed_boost"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+	}
+}

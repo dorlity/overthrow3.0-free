@@ -1,0 +1,92 @@
+"npc_dota_hero_night_stalker"
+{
+	"night_stalker_void"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "15"
+		}
+		"damage"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+		}
+		"movespeed_slow"
+		{
+			"value" "-5"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"attackspeed_slow" "-20"
+				"radius_scepter" "30"
+			}
+		}
+		"duration_night"
+		{
+			"value" "0.6"
+			"operator" "OP_ADD"
+			"max_count" "5"
+			"linked_special_values"
+			{
+				"scepter_zone_duration" "1"
+			}
+		}
+	}
+	"night_stalker_crippling_fear"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "6"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"dps"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+		}
+	}
+	"night_stalker_hunter_in_the_night_custom"
+	{
+		"bonus_movement_speed_pct_night"
+		{
+			"value" "8"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"shard_mana_restore_pct" "5"
+			}
+		}
+		"bonus_attack_speed_night"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"shard_hp_restore_pct" "7"
+			}
+		}
+	}
+	"night_stalker_darkness"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"bonus_damage"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+		}
+	}
+}

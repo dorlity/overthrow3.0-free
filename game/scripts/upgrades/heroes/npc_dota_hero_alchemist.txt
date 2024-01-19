@@ -1,0 +1,130 @@
+"npc_dota_hero_alchemist"
+{
+	"alchemist_acid_spray"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"radius"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"damage"
+		{
+			"value" "14"
+			"operator" "OP_ADD"
+		}
+		"armor_reduction"
+		{
+			"value" "1.5"
+			"operator" "OP_ADD"
+		}
+	}
+	"alchemist_unstable_concoction"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "6"
+			"linked_special_values"
+			{
+				"move_speed" "4"
+			}
+		}
+		"max_damage"
+		{
+			"value" "115"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"alchemist_unstable_concoction_throw"
+				{
+					"max_damage" "115"
+				}
+			}
+		}
+		"radius"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"alchemist_unstable_concoction_throw"
+				{
+					"midair_explosion_radius" "35"
+				}
+			}
+		}
+	}
+	"alchemist_corrosive_weaponry"
+	{
+		"slow_per_stack"
+		{
+			"value" "2"
+			"operator" "OP_ADD"
+			"max_count" "3"
+			"linked_special_values"
+			{
+				"status_resist_per_stack" "2"
+			}
+		}
+	}
+	"alchemist_chemical_rage"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_abilities"
+			{
+				"alchemist_berserk_potion"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"bonus_health_regen"
+		{
+			"value" "12"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"bonus_movespeed" "6"
+			}
+			"linked_abilities"
+			{
+				"alchemist_berserk_potion"
+				{
+					"hp_regen" "6"
+					"move_speed" "5"
+				}
+			}
+		}
+		"base_attack_time"
+		{
+			"value" "-0.05"
+			"operator" "OP_MULTIPLY"
+
+			"multiplicative_target"			"0"
+			"multiplicative_base_value"		"0.9"
+			
+			"linked_abilities"
+			{
+				"alchemist_berserk_potion"
+				{
+					"attack_speed" "15"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,121 @@
+"npc_dota_hero_magnataur"
+{
+	"magnataur_shockwave"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"shock_damage"
+		{
+			"value" "55"
+			"operator" "OP_ADD"
+		}
+		"shock_width"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"pull_distance" "22.5"
+				"return_damage_pct" "7.5"
+			}
+		}
+	}
+	"magnataur_empower"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_special_values"
+			{
+				"empower_duration" "5"
+			}
+		}
+		"bonus_damage_pct"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"cleave_damage_pct" "6"
+				"self_multiplier"
+				{
+					"value" "20"
+					"operator" "OP_MULTIPLY"
+
+					"multiplicative_target"			"200"
+					"multiplicative_base_value"		"50"
+				}
+			}
+		}
+	}
+	"magnataur_skewer"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+			"linked_abilities"
+			{
+				"magnataur_horn_toss"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"skewer_radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"magnataur_horn_toss"
+				{
+					"radius" "45"
+				}
+			}
+		}
+		"skewer_damage"
+		{
+			"value" "100"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"magnataur_horn_toss"
+				{
+					"damage" "75"
+				}
+			}
+		}
+	}
+	"magnataur_reverse_polarity"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"pull_radius"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"polarity_damage"
+		{
+			"value" "225"
+			"operator" "OP_ADD"
+		}
+	}
+}

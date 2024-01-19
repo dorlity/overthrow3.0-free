@@ -1,0 +1,8 @@
+ot3_desert_octet
+{
+	material materials/overviews/ot3_desert_octet.vmat
+	pos_x -5000
+	pos_y 5800
+	scale 9.766
+}
+

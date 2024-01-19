@@ -1,0 +1,121 @@
+"npc_dota_hero_primal_beast"
+{
+	"primal_beast_onslaught"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"knockback_damage"
+		{
+			"value" "75"
+			"operator" "OP_ADD"
+		}
+		"knockback_radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"knockback_distance" "30"
+			}
+		}
+	}
+	"primal_beast_trample"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"effect_radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"base_damage"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"attack_damage" "4"
+			}
+		}
+	}
+	"primal_beast_uproar"
+	{
+		"bonus_damage_per_stack"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"bonus_damage" "4"
+				"projectile_damage" "15"
+			}
+		}
+		"roared_bonus_armor"
+		{
+			"value" "1"
+			"operator" "OP_ADD"
+		}
+		"stack_limit"
+		{
+			"value" "0.5"
+			"operator" "OP_ADD"
+			"min_rarity" "rare"
+			"max_count" "10"
+		}
+	}
+	"primal_beast_pulverize"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"primal_beast_rock_throw"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"damage"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"primal_beast_rock_throw"
+				{
+					"base_damage" "50"
+				}
+			}
+		}
+		"splash_radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"primal_beast_rock_throw"
+				{
+					"impact_radius" "30"
+					"fragment_impact_radius" "30"
+				}
+			}
+		}
+	}
+}

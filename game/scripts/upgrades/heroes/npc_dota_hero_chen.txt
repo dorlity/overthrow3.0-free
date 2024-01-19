@@ -1,0 +1,89 @@
+"npc_dota_hero_chen"
+{
+	"chen_penitence"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+		}
+		"bonus_movement_speed"
+		{
+			"value" "-10"
+			"operator" "OP_ADD"
+			"max_count" "5"
+			"linked_special_values"
+			{
+				"self_attack_range_bonus" "50"
+			}
+		}
+		"bonus_attack_speed"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+		}
+	}
+	"chen_soul_persuasion"
+	{
+		"health_min"
+		{
+			"value" "1000"
+			"operator" "OP_ADD"
+		}
+		"souls_per_second"
+		{
+			"value" "1.5"
+			"operator" "OP_ADD"
+		}
+		"damage_bonus"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"movement_speed_bonus" "20"
+			}
+		}
+	}
+	"chen_divine_favor"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "15"
+			"operator" "OP_MULTIPLY"
+		}
+		"heal_rate"
+		{
+			"value" "7"
+			"operator" "OP_ADD"
+		}
+		"bonus_armor"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+			"max_count" "16"
+			"linked_special_values"
+			{
+				"heal_amp" "5"
+			}
+		}
+	}
+	"chen_hand_of_god"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"heal_amount"
+		{
+			"value" "200"
+			"operator" "OP_ADD"
+		}
+		"heal_per_second"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+		}
+	}
+}

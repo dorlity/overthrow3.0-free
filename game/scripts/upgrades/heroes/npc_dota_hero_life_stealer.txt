@@ -1,0 +1,86 @@
+"npc_dota_hero_life_stealer"
+{
+	"life_stealer_rage"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "2"
+		}
+		"movement_speed_bonus"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+		}
+	}
+	"life_stealer_feast"
+	{
+		"hp_leech_percent"
+		{
+			"value" "0.2"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"hp_damage_percent"
+		{
+			"value" "0.2"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"life_stealer_ghoul_frenzy"
+	{
+		"movement_slow"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+		"duration"
+		{
+			"value" "0.2"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+		"attack_speed_bonus"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+		}
+	}
+	"life_stealer_infest"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"radius"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"damage"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+		}
+		"bonus_movement_speed"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+		}
+		"bonus_health"
+		{
+			"value"			"150"
+			"talents"
+			{
+				"special_bonus_unique_lifestealer_infest_target_bonus"	"x1.15"
+			}
+			"operator" "OP_ADD"
+		}
+	}
+}

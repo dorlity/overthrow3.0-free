@@ -1,0 +1,83 @@
+"npc_dota_hero_faceless_void"
+{
+	"faceless_void_time_walk"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"backtrack_duration"
+		{
+			"value" "0.2"
+			"operator" "OP_ADD"
+			"max_count" "5"
+			"linked_special_values"
+			{
+				"radius_scepter" "30"
+			}
+		}
+	}
+	"faceless_void_time_dilation"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"radius"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"cooldown_percentage"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+			"max_count" "5"
+			"linked_special_values"
+			{
+				"slow" "4"
+			}
+		}
+		"damage_per_stack"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+		}
+	}
+	"faceless_void_time_lock"
+	{
+		"chance_pct"
+		{
+			"value" "2"
+			"operator" "OP_MULTIPLY"
+			"max_count" "6"
+
+			"multiplicative_target"			"26"
+			"multiplicative_base_value"		"0"
+		}
+		"bonus_damage"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+		}
+	}
+	"faceless_void_chronosphere"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+}

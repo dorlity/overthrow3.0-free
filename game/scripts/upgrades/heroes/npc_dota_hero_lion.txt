@@ -1,0 +1,69 @@
+"npc_dota_hero_lion"
+{
+	"lion_impale"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "9"
+		}
+		"damage"
+		{
+			"value" "70"
+			"operator" "OP_ADD"
+		}
+	}
+	"lion_voodoo"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+	}
+	"lion_mana_drain"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"mana_per_second"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+		}
+		"break_distance"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"ally_pct"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+			"max_count"	"5"
+		}
+	}
+	"lion_finger_of_death"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage"
+		{
+			"value" "85"
+			"operator" "OP_ADD"
+		}
+		"damage_per_kill"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+		}
+	}
+}

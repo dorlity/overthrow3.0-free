@@ -1,0 +1,76 @@
+/* Prettified by Source 2 Viewer 7.0.0.0 - https://valveresourceformat.github.io */
+
+.Custom_TopButton
+{
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+	horizontal-align: left;
+	wash-color: transparent;
+	opacity: 1;
+	margin-top: 3px;
+	vertical-align: top;
+}
+
+.IsLocalPlayerSpectating .Custom_TopButton
+{
+	visibility: collapse;
+}
+
+.CustomEndGameSimulate .Custom_TopButton
+{
+	visibility: collapse;
+}
+
+.Custom_TopButton:hover .CTP_Icon
+{
+	wash-color: white;
+	opacity: 1;
+}
+
+.Custom_TopButton .CTP_Icon
+{
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	img-shadow: 0px 0px 3px 3 black;
+	opacity: 0.5;
+	transition-property: opacity, wash-color;
+	transition-duration: 0.15s;
+	wash-color: #cdf;
+	tooltip-position: bottom;
+}
+
+#CollectionButton
+{
+	margin-top: 0px;
+}
+
+#CollectionButton .CTP_Icon
+{
+	background-image: url("s2r://panorama/images/custom_game/inventory_png.vtex");
+}
+
+#MailButton .CTP_Icon
+{
+	background-image: url("s2r://panorama/images/custom_game/mail_icon_png.vtex");
+}
+
+#FeedbackButton .CTP_Icon
+{
+	background-image: url("s2r://panorama/images/custom_game/feedback_icon_png.vtex");
+}
+
+#CustomSettingsButton .CTP_Icon
+{
+	background-image: url("s2r://panorama/images/control_icons/edit_png.vtex");
+	background-size: 80%;
+	background-position: 50%;
+}
+
+#LeaderboardButton .CTP_Icon
+{
+	background-image: url("s2r://panorama/images/custom_game/leaderboard_icon_png.vtex");
+}
+

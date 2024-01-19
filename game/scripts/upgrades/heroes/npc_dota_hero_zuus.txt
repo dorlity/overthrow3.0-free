@@ -1,0 +1,102 @@
+"npc_dota_hero_zuus"
+{
+	"zuus_arc_lightning"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"arc_damage"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"jump_count" "2"
+			}
+		}
+	}
+	"zuus_lightning_bolt"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"zuus_cloud"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"damage"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+		}
+	}
+	"zuus_heavenly_jump"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"hop_distance"
+		{
+			"value" "100"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"range" "50"
+			}
+		}
+		"damage"
+		{
+			"value" "75"
+			"operator" "OP_ADD"
+		}
+		"targets"
+		{
+			"value" "2"
+			"operator" "OP_ADD"
+			"max_count" "7"
+		}
+	}
+	"zuus_thundergods_wrath"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "20"
+		}
+		"damage"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+		}
+		"damage_pct"
+		{
+			"value" "1"
+			"operator" "OP_MULTIPLY"
+
+			"multiplicative_target"			"25"
+			"multiplicative_base_value"		"10"
+		}
+	}
+}

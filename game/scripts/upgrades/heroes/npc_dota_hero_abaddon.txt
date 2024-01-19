@@ -1,0 +1,84 @@
+"npc_dota_hero_abaddon"
+{
+	"ot3_abaddon_death_coil"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"self_damage"
+		{
+			"value" "-10"
+			"operator" "OP_ADD"
+			"max_count" "4"
+		}
+		"target_damage"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+
+			"linked_special_values"
+			{
+				"heal_amount"
+				{
+					"value"						"50"
+				}
+			}
+		}
+		"missile_speed"
+		{
+			"value" "130"
+			"operator" "OP_ADD"
+		}
+	}
+	"abaddon_aphotic_shield"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage_absorb"
+		{
+			"value" "45.0"
+			"operator" "OP_ADD"
+		}
+		"radius"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"abaddon_frostmourne"
+	{
+		"hit_count"
+		{
+			"value" "-0.25"
+			"operator" "OP_ADD"
+			"min_rarity" "epic"
+			"max_count" "4"
+		}
+		"curse_slow"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+			"max_count" "5"
+			"linked_special_values"
+			{
+				"movement_speed" "5"
+			}
+		}
+		"curse_attack_speed"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+		}
+		"curse_dps"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+		}
+	}
+}

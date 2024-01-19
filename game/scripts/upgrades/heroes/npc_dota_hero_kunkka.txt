@@ -1,0 +1,122 @@
+"npc_dota_hero_kunkka"
+{
+	"kunkka_torrent"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+			"max_count" "8"
+			"linked_abilities"	
+			{	
+				"kunkka_torrent_storm"	
+				{	
+					"cooldown_and_manacost"	
+					{	
+						"value" "10"	
+						"operator" "OP_MULTIPLY"	
+					}	
+				}	
+			}
+		}
+		"torrent_damage"
+		{
+			"value" "70"
+			"operator" "OP_ADD"
+		}
+	}
+	"kunkka_tidebringer"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+			"linked_abilities"
+			{
+				"kunkka_tidal_wave"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "10"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"cleave_distance"
+		{
+			"value" "75"
+			"operator" "OP_ADD"
+			"max_count" "8"
+			"linked_special_values"
+			{
+				"cleave_ending_width" "50"
+				"cleave_starting_width" "25"
+			}
+			"linked_abilities"
+			{
+				"kunkka_tidal_wave"
+				{
+					"radius" "60"
+					"knockback_distance" "30"
+					"speed" "35"
+				}
+			}
+		}
+		"damage_bonus"
+		{
+			"value" "80"
+			"operator" "OP_ADD"
+			
+			"linked_abilities"
+			{
+				"kunkka_tidal_wave"
+				{
+					"damage" "40"
+				}
+			}
+		}
+	}
+	"kunkka_x_marks_the_spot"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+		}
+		"duration"
+		{
+			"value" "0.75"
+			"operator" "OP_ADD"
+			"max_count" "4"
+			"linked_special_values"
+			{
+				"allied_duration" "1.5"
+			}
+		}
+	}
+	"kunkka_ghostship"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "15"
+		}
+		"damage"
+		{
+			"value" "150"
+			"operator" "OP_ADD"
+		}
+		"ghostship_width"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"movespeed_bonus" "5"
+			}
+		}
+	}
+}

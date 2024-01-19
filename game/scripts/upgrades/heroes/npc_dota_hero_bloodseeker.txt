@@ -1,0 +1,131 @@
+"npc_dota_hero_bloodseeker"
+{
+	"bloodseeker_bloodrage"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"attack_speed"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+		}
+		"spell_amp"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+			"max_count" "8"
+		}
+	}
+	"bloodseeker_blood_bath"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"damage"
+		{
+			"value" "70"
+			"operator" "OP_ADD"
+		}
+		"delay"
+		{
+			"value" "-0.26"
+			"operator" "OP_MULTIPLY"
+
+			"multiplicative_target"			"0"
+			"multiplicative_base_value"		"2.6"
+			
+			"linked_special_values"
+			{
+				"delay_plus_castpoint_tooltip" "-0.26"
+			}
+		}
+	}
+	"bloodseeker_thirst"
+	{
+		"min_bonus_pct"
+		{
+			"value" "2"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"max_bonus_pct" "2"
+				"visibility_threshold_pct" "2"
+				"invis_threshold_pct" "2"
+			}
+			"linked_abilities"
+			{
+				"bloodseeker_blood_mist"
+				{
+					"radius" "30"
+				}
+			}
+		}
+		"bonus_movement_speed"
+		{
+			"value" "6"
+			"operator" "OP_ADD"
+		}
+		"hero_kill_heal"
+		{
+			"value" "3"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"creep_kill_heal" "3"
+			}
+			"linked_abilities"
+			{
+				"bloodseeker_blood_mist"
+				{
+					"hp_cost_per_second"
+					{
+						"value" "0.5"
+						"operator" "OP_MULTIPLY"
+
+						"multiplicative_target"			"14"
+						"multiplicative_base_value"		"7"
+					}
+				}
+			}
+		}
+	}
+	"bloodseeker_rupture"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"movement_damage_pct"
+		{
+			"value" "8"
+			"operator" "OP_ADD"
+			
+			"linked_special_values"
+			{
+				"hp_pct"
+				{
+					"value" "1.5"
+					"operator" "OP_MULTIPLY"
+
+					"multiplicative_target"			"100"
+					"multiplicative_base_value"		"18"
+				}
+				"damage_cap_amount" "30"
+			}
+		}
+	}
+}

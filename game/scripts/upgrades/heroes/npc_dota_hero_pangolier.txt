@@ -1,0 +1,122 @@
+"npc_dota_hero_pangolier"
+{
+	"pangolier_swashbuckle"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+			"max_count" "15"
+		}
+		"damage"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+		}
+		"start_radius"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"end_radius" "35"
+			}
+		}
+	}
+	"pangolier_shield_crash"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+			"max_count" "7"
+			"linked_special_values"
+			{
+				"slow" "5"
+			}
+		}
+		"damage"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+		}
+		"hero_shield"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+		}
+		"radius"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"pangolier_lucky_shot"
+	{
+		"chance_pct"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+			"max_count" "21"
+		}
+		"armor"
+		{
+			"value" "2"
+			"operator" "OP_ADD"
+			
+			"linked_special_values"
+			{
+				"attack_slow" "20"
+			}
+		}
+	}
+	"pangolier_gyroshell"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "12"
+			"operator" "OP_MULTIPLY"
+			"max_count" "7"
+			"linked_abilities"
+			{
+				"pangolier_rollup"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "12"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"forward_move_speed"
+		{
+			"value" "55"
+			"operator" "OP_ADD"
+			"max_count" "5"
+			"linked_special_values"
+			{
+				"turn_rate" "12"
+				"turn_rate_boosted" "16.5"
+				"hit_radius" "20"
+			}
+			"linked_abilities"
+			{
+				"pangolier_rollup"
+				{
+					"forward_move_speed" "60"
+					"turn_rate" "27.5"
+					"turn_rate_boosted" "27.5"
+					"hit_radius" "20"
+				}
+			}
+		}
+		"damage"
+		{
+			"value" "80"
+			"operator" "OP_ADD"
+		}
+	}
+}

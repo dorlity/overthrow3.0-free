@@ -1,0 +1,109 @@
+"npc_dota_hero_ogre_magi"
+{
+	"ogre_magi_fireblast"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "4"
+			"linked_abilities"
+			{
+				"ogre_magi_unrefined_fireblast"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"fireblast_damage"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"ogre_magi_unrefined_fireblast"
+				{
+					"fireblast_damage"    "30"
+				}
+			}
+		}
+	}
+	"ogre_magi_ignite"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_abilities"
+			{
+				"ogre_magi_smash"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"burn_damage"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"ogre_magi_smash"
+				{
+					"damage" "25"
+				}
+			}
+		}
+	}
+	"ogre_magi_bloodlust"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"bonus_movement_speed"
+		{
+			"value" "3"
+			"operator" "OP_ADD"
+		}
+		"bonus_attack_speed"
+		{
+			"value" "21"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"self_bonus" "28"
+			}
+		}
+	}
+	"ogre_magi_multicast"
+	{
+		"multicast_2_times"
+		{
+			"value" "7.5"
+			"operator" "OP_ADD"
+			"max_count" "2"
+		}
+		"multicast_3_times"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"multicast_4_times"
+		{
+			"value" "2.5"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+}

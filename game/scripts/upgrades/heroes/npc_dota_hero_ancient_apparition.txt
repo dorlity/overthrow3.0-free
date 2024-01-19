@@ -1,0 +1,78 @@
+"npc_dota_hero_ancient_apparition"
+{
+	"ancient_apparition_cold_feet"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "9"
+			"operator" "OP_MULTIPLY"
+			"max_count" "4"
+		}
+		"damage"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+		}
+		"break_distance"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+	}
+	"ancient_apparition_ice_vortex"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "9"
+			"operator" "OP_MULTIPLY"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"vision_aoe" "30"
+			}
+		}
+		"shard_dps"
+		{
+			"value" "6"
+			"operator" "OP_ADD"
+		}
+	}
+	"ancient_apparition_chilling_touch"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage"
+		{
+			"value" "12"
+			"operator" "OP_ADD"
+		}
+	}
+	"ancient_apparition_ice_blast"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "9"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"dot_damage"
+		{
+			"value" "6"
+			"operator" "OP_ADD"
+		}
+		"damage"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+		}
+	}
+}

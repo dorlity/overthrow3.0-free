@@ -1,0 +1,147 @@
+"npc_dota_hero_furion"
+{
+	"furion_sprout"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "9"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"furion_curse_of_the_forest"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "9"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"sprout_damage"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"furion_curse_of_the_forest"
+				{
+					"damage_per_tree" "2"
+				}
+			}
+		}
+		"sprout_damage_radius"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count"	"10"
+			"linked_special_values"
+			{
+				"vision_range"
+				{
+					"value" "35"
+					"operator" "OP_ADD"
+				}
+			}
+			"linked_abilities"
+			{
+				"furion_curse_of_the_forest"
+				{
+					"radius"
+					{
+						"value" "35"
+						"operator" "OP_ADD"
+					}
+					"range"
+					{
+						"value" "60"
+						"operator" "OP_ADD"
+					}
+				}
+			}
+		}
+	}
+	"furion_teleportation"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"max_stacks" "2"
+				"buff_duration" "2"
+			}
+		}
+		"damage_per_stack"
+		{
+			"value" "3"
+			"operator" "OP_ADD"
+		}
+		"armor_per_stack"
+		{
+			"value" "1.5"
+			"operator" "OP_MULTIPLY"
+		}
+	}
+	"furion_force_of_nature_custom"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+			"max_count" "8"
+		}
+		"treant_damage"
+		{
+			"value" 		"50"
+
+			"talents"
+			{
+				"special_bonus_unique_furion"	"x2.5"
+			}
+
+			"operator" "OP_ADD"
+		}
+		"treant_hp"
+		{
+			"value" "500"
+
+			"talents"
+			{
+				"special_bonus_unique_furion"	"x2.5"
+			}
+
+			"operator" "OP_ADD"
+
+			"linked_special_values"
+			{
+				"treant_movespeed"		"20"
+			}
+		}
+	}
+	"furion_wrath_of_nature"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "9"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"damage"
+		{
+			"value" "65"
+			"operator" "OP_ADD"
+		}
+		"damage_percent_add"
+		{
+			"value" "3.5"
+			"operator" "OP_MULTIPLY"
+
+			"multiplicative_target"			"35"
+			"multiplicative_base_value"		"10"
+		}
+	}
+}

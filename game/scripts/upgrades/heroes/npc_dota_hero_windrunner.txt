@@ -1,0 +1,108 @@
+"npc_dota_hero_windrunner"
+{
+	"windrunner_shackleshot"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "4"
+			"linked_special_values"
+			{
+				"shackle_angle" "7"
+			}
+		}
+		"shackle_distance"
+		{
+			"value" "100"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+		"shackle_count"
+		{
+			"value" "1"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+	}
+	"windrunner_powershot"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+			"max_count" "15"
+		}
+		"powershot_damage"
+		{
+			"value" "90"
+			"operator" "OP_ADD"
+		}
+		"arrow_width"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"vision_radius" "50"
+			}
+		}
+	}
+	"windrunner_windrun"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "9"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"windrunner_gale_force"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "9"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"movespeed_bonus_pct"
+		{
+			"value" "6"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"enemy_movespeed_bonus_pct" "-6"
+				"scepter_movespeed_bonus_pct" "-6"
+			}
+			"linked_abilities"
+			{
+				"windrunner_gale_force"
+				{
+					"wind_strength" "30"
+				}
+			}
+		}
+	}
+	"windrunner_focusfire"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "12"
+			"operator" "OP_MULTIPLY"
+		}
+		"focusfire_damage_reduction"
+		{
+			"value" "9"
+			"operator" "OP_ADD"
+			"max_count" "2"
+			"linked_special_values"
+			{
+				"bonus_attack_speed" "100"
+			}
+		}
+	}
+}

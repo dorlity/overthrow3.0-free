@@ -1,0 +1,24 @@
+<!-- xml reconstructed by Source 2 Viewer 7.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/flow_test/flow_test.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/layout/custom_game/scripts/utils.vjs_c" />
+	</scripts>
+	<Panel class="FlowTest">
+		<Panel class="Child" id="Child1">
+			<Label class="ChildLabel" text="awpidsufncpao9iudwnvcpiadnjvcweopaikdrvfbnwp;eosifuvdnp;oweisufndrvjpwo;eiufdnvwipoeufdnv" />
+		</Panel>
+		<Panel class="Child" id="Child2">
+			<Label class="ChildLabel" text="awpidsufncpao9iudw" />
+		</Panel>
+		<Panel class="Child" id="Child3">
+			<Label class="ChildLabel" text="awpidsufncpao9iudw" />
+		</Panel>
+		<Panel class="Child" id="Child4">
+			<Label class="ChildLabel" text="awpidsufncpao9iudw" />
+		</Panel>
+	</Panel>
+</root>

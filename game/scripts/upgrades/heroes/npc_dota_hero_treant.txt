@@ -1,0 +1,157 @@
+"npc_dota_hero_treant"
+{
+	"treant_natures_grasp"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"movement_slow" "5"
+			}
+		}
+		"damage_per_second"
+		{
+			"value" "18"
+			"operator" "OP_ADD"
+		}
+		"latch_range"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"latch_vision" "30"
+			}
+		}
+	}
+	"treant_leech_seed"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "15"
+			"operator" "OP_MULTIPLY"
+			"linked_abilities"
+			{
+				"treant_natures_guise"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "15"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"leech_damage"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"treant_natures_guise"
+				{
+					"shard_damage" "50"
+				}
+			}
+		}
+		"radius"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"duration" "1"
+				"projectile_speed" "45"
+			}
+			"linked_abilities"
+			{
+				"treant_natures_guise"
+				{
+					"radius" "30"
+				}
+			}
+		}
+	}
+	"treant_living_armor"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "15"
+			"operator" "OP_MULTIPLY"
+			"linked_abilities"
+			{
+				"treant_natures_guise"
+				{
+					"movement_bonus" "8"
+				}
+			}
+		}
+		"heal_per_second"
+		{
+			"value" "8"
+			"operator" "OP_ADD"
+		}
+		"bonus_armor"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"treant_natures_guise"
+				{
+					"shard_root_time" "0.15"
+					"shard_by_tree_root_time" "0.3"
+				}
+			}
+		}
+	}
+	"treant_overgrowth"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+			"max_count" "15"
+			"linked_abilities"
+			{
+				"treant_eyes_in_the_forest"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "10"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"radius"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"eyes_radius" "50"
+			}
+			"linked_abilities"
+			{
+				"treant_eyes_in_the_forest"
+				{
+					"AbilityCastRange" "50"
+					"vision_aoe" "50"
+					"overgrowth_aoe" "50"
+				}
+			}
+		}
+		"damage"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+		}
+	}
+}

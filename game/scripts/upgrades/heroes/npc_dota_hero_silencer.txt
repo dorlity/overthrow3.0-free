@@ -1,0 +1,74 @@
+"npc_dota_hero_silencer"
+{
+	"silencer_curse_of_the_silent"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"damage"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"application_damage" "10"
+			}
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"penalty_multiplier"
+		{
+			"value" "0.1"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"silencer_glaives_of_wisdom"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"intellect_damage_pct"
+		{
+			"value" "1.5"
+			"operator" "OP_ADD"
+		}
+	}
+	"silencer_last_word"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "6"
+		}
+		"damage"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+		}
+		"int_multiplier"
+		{
+			"value" "0.15"
+			"operator" "OP_ADD"
+		}
+	}
+	"silencer_global_silence"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "7"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+	}
+}

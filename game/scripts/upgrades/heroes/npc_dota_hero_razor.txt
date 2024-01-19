@@ -1,0 +1,112 @@
+"npc_dota_hero_razor"
+{
+	"razor_plasma_field"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage_max"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"damage_min" "20"
+			}
+		}
+		"radius"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"speed" "31.8"
+			}
+		}
+	}
+	"razor_static_link"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"drain_length"
+		{
+			"value" "2"
+			"operator" "OP_ADD"
+			"max_count" "5"
+			"linked_special_values"
+			{
+				"drain_duration" "4"
+				"pull_speed"	"30" // shard
+			}
+		}
+		"drain_rate"
+		{
+			"value" "6"
+			"operator" "OP_ADD"
+		}
+	}
+	"razor_unstable_current"
+	{
+		"strike_internal_cd"
+		{
+			"value" "-0.24"
+			"operator" "OP_MULTIPLY"
+
+			"multiplicative_target" 		"0"
+			"multiplicative_base_value"		"3"
+		}
+		"self_movement_speed_pct"
+		{
+			"value" "6"
+			"operator" "OP_ADD"
+		}
+		"strike_damage"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+
+			"talents"
+			{
+				"special_bonus_unique_razor_storm_surge_damage_and_slow"	"x1.25"
+			}
+		}
+	}
+	"razor_eye_of_the_storm"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"strike_interval"
+		{
+			"value" "-0.02"
+			"operator" "OP_MULTIPLY"
+			"min_rarity" "rare"
+
+			"multiplicative_target" 		"0"
+			"multiplicative_base_value"		"0.4"
+		}
+		"damage"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"armor_reduction" "0.15"
+			}
+		}
+	}
+}

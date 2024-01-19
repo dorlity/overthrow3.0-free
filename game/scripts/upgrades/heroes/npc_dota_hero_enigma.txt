@@ -1,0 +1,109 @@
+"npc_dota_hero_enigma"
+{
+	"enigma_malefice"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "8"
+		}
+		"stun_instances"
+		{
+			"value" "1"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+		"damage"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+		}
+	}
+	"enigma_demonic_conversion"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+		}
+		"eidelon_max_health"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+
+			"linked_special_values"
+			{
+				"eidolon_magic_resist"
+				{
+					"value" "3"
+					"operator" "OP_MULTIPLY"
+
+					"multiplicative_target"			"100"
+					"multiplicative_base_value"		"60"
+				}
+			}
+		}
+		"eidelon_base_damage"
+		{
+			"value" "22"
+			"operator" "OP_ADD"
+		}
+	}
+	"enigma_midnight_pulse"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "14"
+		}
+		"radius"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"base_damage"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+		}
+	}
+	"enigma_black_hole"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "30"
+		}
+		"damage"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"scepter_pct_damage"
+				{
+					"value" "0.7"
+					"operator" "OP_MULTIPLY"
+
+					"multiplicative_target"			"25"
+					"multiplicative_base_value"		"3.5"
+				}
+			}
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"vision_radius" "60"
+				"scepter_radius" "60"
+			}
+		}
+	}
+}

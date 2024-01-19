@@ -1,0 +1,96 @@
+"npc_dota_hero_sven"
+{
+	"sven_storm_bolt"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "8"
+		}
+		"bolt_aoe"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"vision_radius" "30"
+			}
+		}
+		"damage"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"bolt_speed" "100"
+			}
+		}
+	}
+	"sven_great_cleave"
+	{
+		"cleave_distance"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"cleave_starting_width" "15"
+				"cleave_ending_width" "35"
+			}
+		}
+		"great_cleave_damage"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+		}
+		"strength_bonus"
+		{
+			"value" "7"
+			"operator" "OP_ADD"
+		}
+	}
+	"sven_warcry"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"movespeed"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+		}
+		"bonus_armor"
+		{
+			"value" "2"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"shard_passive_armor" "1"
+			}
+		}
+	}
+	"sven_gods_strength"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"gods_strength_damage"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+		}
+		"bonus_slow_resistance"
+		{
+			"value" "6.25"
+			"operator" "OP_ADD"
+			"max_count"	"8"
+		}
+	}
+}

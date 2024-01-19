@@ -1,0 +1,127 @@
+"npc_dota_hero_terrorblade"
+{
+	"terrorblade_reflection_lua"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "8"
+			"linked_abilities"
+			{
+				"terrorblade_terror_wave"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"illusion_outgoing_tooltip"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"illusion_outgoing_damage" "20"
+			}
+		}
+		"move_slow"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+		"range"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"terrorblade_conjure_image"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"illusion_outgoing_damage"
+		{
+			"value" "14.0"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"illusion_outgoing_tooltip" "14"
+			}
+		}
+		"illusion_incoming_damage"
+		{
+			"value" "-30"
+			"operator" "OP_MULTIPLY"
+			
+			"multiplicative_target"			"-100"
+			"multiplicative_base_value"		"200"
+			
+			"linked_special_values"
+			{
+				"illusion_incoming_damage_total_tooltip"
+				{
+					"value" "-30"
+				
+					"operator" "OP_MULTIPLY"
+					"multiplicative_target" "0"
+				}
+			}
+		}
+	}
+	"terrorblade_metamorphosis"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_abilities"
+			{
+				"terrorblade_demon_zeal"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+					"berserk_bonus_movement_speed" "20"
+				}
+			}
+		}
+		"bonus_damage"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"terrorblade_demon_zeal"
+				{
+					"berserk_bonus_attack_speed" "20"
+				}
+			}
+		}
+	}
+	"terrorblade_sunder"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"hit_point_minimum_pct"
+		{
+			"value" "-5"
+			"operator" "OP_ADD"
+			"max_count" "4"
+		}
+	}
+}

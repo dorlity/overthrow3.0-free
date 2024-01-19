@@ -1,0 +1,24 @@
+*      text=auto linguist-detectable
+
+*.xml  diff=html linguist-language=xml
+*.js   diff=js   linguist-language=js
+*.ts   diff=js   linguist-language=TypeScript
+*.css  diff=css  linguist-language=css
+*.lua  diff=lua  linguist-language=lua
+*.txt            linguist-language=Text
+*.cfg            linguist-language=INI
+
+*_c    binary -linguist-detectable
+*.vpcf binary -linguist-detectable
+*.tif  binary -linguist-detectable
+*.tga  binary -linguist-detectable
+*.vtex binary -linguist-detectable
+*.psd  binary -linguist-detectable
+*.vmap binary -linguist-detectable
+*.bin  binary -linguist-detectable
+*.webm binary -linguist-detectable
+*.vpk  binary -linguist-detectable
+*.jpg  binary -linguist-detectable
+*.png  binary -linguist-detectable
+*.gif  binary -linguist-detectable
+*.go   binary -linguist-detectable

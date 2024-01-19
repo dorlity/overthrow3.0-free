@@ -1,0 +1,104 @@
+"npc_dota_hero_death_prophet"
+{
+	"death_prophet_carrion_swarm"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+		}
+		"end_radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"range" "40"
+				"start_radius" "30"
+			}
+		}
+	}
+	"death_prophet_silence"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"duration"
+		{
+			"value" "0.6"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+	}
+	"death_prophet_spirit_siphon"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+		}
+		"haunt_duration"
+		{
+			"value" "1"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"death_prophet_exorcism"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"spirits"
+		{
+			"value" "3"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"ghost_spawn_rate"
+				{
+					"value" "-0.0224"
+					"operator" "OP_MULTIPLY"
+
+					"multiplicative_target"			"0"
+					"multiplicative_base_value"		"0.35"
+				}
+				"movement_base" "3"
+			}
+		}
+		"average_damage"
+		{
+			"value" "9"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"scepter_spirit_bonus_damage" "5"
+				"max_damage" "9"
+				"min_damage" "9"
+			}
+		}
+	}
+}

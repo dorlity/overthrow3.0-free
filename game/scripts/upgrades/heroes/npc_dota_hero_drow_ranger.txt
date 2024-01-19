@@ -1,0 +1,92 @@
+"npc_dota_hero_drow_ranger"
+{
+	"drow_ranger_frost_arrows"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage"
+		{
+			"value" "8"
+			"operator" "OP_ADD"
+		}
+		"shard_burst_damage_per_stack"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"shard_burst_radius"
+				{
+					"value" "35"
+					"operator" "OP_MULTIPLY"
+
+					"multiplicative_target"			"1000"
+					"multiplicative_base_value"		"650"
+				}
+			}
+		}
+	}
+	"drow_ranger_wave_of_silence"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+
+			"linked_abilities"
+			{
+				"drow_ranger_glacier"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"wave_width"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"drow_ranger_multishot"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"arrow_damage_pct"
+		{
+			"value" "14"
+			"operator" "OP_ADD"
+		}
+	}
+	"drow_ranger_marksmanship"
+	{
+		"chance"
+		{
+			"value" "2.5"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"bonus_damage"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+		}
+		"agility_multiplier"
+		{
+			"value" "2.5"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+}

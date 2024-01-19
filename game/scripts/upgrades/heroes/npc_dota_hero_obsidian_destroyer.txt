@@ -1,0 +1,75 @@
+"npc_dota_hero_obsidian_destroyer"
+{
+	"obsidian_destroyer_arcane_orb"
+	{
+		"mana_pool_damage_pct"
+		{
+			"value" "0.3"
+			"operator" "OP_ADD"
+		}
+		"mana_cost_percentage"
+		{
+			"value" "-1.5"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"obsidian_destroyer_astral_imprisonment"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "4"
+		}
+		"damage"
+		{
+			"value" "65"
+			"operator" "OP_ADD"
+		}
+		"mana_capacity_steal"
+		{
+			"value" "2"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+	}
+	"obsidian_destroyer_equilibrium"
+	{
+		"proc_chance"
+		{
+			"value" "3"
+			"operator" "OP_ADD"
+		}
+		"mana_restore"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+			"max_count" "9"
+		}
+	}
+	"obsidian_destroyer_sanity_eclipse"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"radius"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"damage_multiplier"
+		{
+			"value" "0.05"
+			"operator" "OP_ADD"
+		}
+		"base_damage"
+		{
+			"value" "110"
+			"operator" "OP_ADD"
+		}
+	}
+}

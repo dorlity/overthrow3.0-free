@@ -1,0 +1,132 @@
+"npc_dota_hero_meepo"
+{
+	"meepo_earthbind"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+			
+			"linked_abilities"
+			{
+				"meepo_petrify"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"duration"
+		{
+			"value" "0.5"
+			"operator" "OP_ADD"
+			"max_count" "4"
+			
+			"linked_abilities"
+			{
+				"meepo_petrify"
+				{
+					"duration" "0.5"
+				}
+			}
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			
+			"linked_special_values"
+			{
+				"megameepo_net_offset" "20"
+			}
+		}
+		"speed"
+		{
+			"value" "100"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"meepo_petrify"
+				{
+					"hp_restore" "6.5"
+				}
+			}
+		}
+	}
+	"meepo_poof"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			
+			"linked_abilities"
+			{
+				"meepo_megameepo"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+				"meepo_megameepo_fling"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+
+			"linked_abilities"
+			{
+				"meepo_megameepo"
+				{
+					"radius" "30"
+				}
+			}
+		}
+		"poof_damage"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+		}
+	}
+	"meepo_ransack"
+	{
+		"health_steal_heroes"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"health_steal_creeps" "2.5"
+			}
+		}
+	}
+	"meepo_divided_we_stand"
+	{
+		"magic_resist"
+		{
+			"value" "6"
+			"operator" "OP_MULTIPLY"
+
+			"multiplicative_target"			"100"
+			"multiplicative_base_value"		"20"
+		}
+	}
+}

@@ -1,0 +1,129 @@
+"npc_dota_hero_warlock"
+{
+	"warlock_fatal_bonds"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"search_aoe"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+
+			"linked_abilities"
+			{
+				// shard imp explode ability
+				"warlock_imp_explode"
+				{
+					"explosion_radius"	"30"
+				}
+			}
+		}
+		"damage_share_percentage"
+		{
+			"value" "1"
+			"operator" "OP_ADD"
+			
+			"linked_abilities"
+			{
+				// shard imp explode ability
+				"warlock_imp_explode"
+				{
+					"explosion_dmg"	"25" // flat
+				}
+			}
+		}
+	}
+	"warlock_shadow_word"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_special_values"
+			{
+				"duration" "1"
+			}
+		}
+		"damage"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+		}
+	}
+	"warlock_upheaval"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"aoe"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"damage_per_second"
+		{
+			"value" "3"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"max_damage" "33"
+			}
+		}
+	}
+	"warlock_rain_of_chaos"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"golem_hp"
+		{
+			"value" "640"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"golem_hp_scepter" "520"
+				"bonus_slow_resistance" "2"
+			}
+			"linked_abilities"
+			{
+				"warlock_golem_flaming_fists"
+				{
+					"radius" "30"
+				}
+				"warlock_golem_permanent_immolation_lua"
+				{
+					"aura_radius" "30"
+				}
+			}
+		}
+		"golem_dmg"
+		{
+			"value" "46"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"golem_dmg_scepter" "34"
+			}
+			"linked_abilities"
+			{
+				"warlock_golem_flaming_fists"
+				{
+					"damage" "12"
+				}
+				"warlock_golem_permanent_immolation_lua"
+				{
+					"aura_damage" "14"
+				}
+			}
+		}
+	}
+}

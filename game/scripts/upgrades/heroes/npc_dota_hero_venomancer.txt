@@ -1,0 +1,154 @@
+"npc_dota_hero_venomancer"
+{
+	"venomancer_venomous_gale"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"venomancer_latent_poison"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"strike_damage"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"tick_damage" "20"
+			}
+			"linked_abilities"
+			{
+				"venomancer_latent_poison"
+				{
+					"duration_damage" "3"
+					"explosion_damage" "45"
+				}
+			}
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "5"
+			"linked_abilities"
+			{
+				"venomancer_latent_poison"
+				{
+					"explosion_stun_duration" "0.2"
+				}
+			}
+		}
+	}
+	"venomancer_poison_sting"
+	{
+		"damage"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+		}
+		"movement_speed"
+		{
+			"value" "-3"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+	}
+	"venomancer_plague_ward_custom"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"ward_hp_tooltip"
+		{
+			"value"			"70"
+
+			"talents"
+			{
+				"special_bonus_unique_venomancer"	"x2.5"
+			}
+
+			"operator" "OP_ADD"
+		}
+		"ward_damage_tooltip"
+		{
+			"value"			"15"
+
+			"talents"
+			{
+				"special_bonus_unique_venomancer"	"x2.5"
+			}
+
+			"operator" "OP_ADD"
+		}
+	}
+	"venomancer_noxious_plague"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count"	"20"
+		}
+		"debuff_radius"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"max_count" "10"
+
+			"linked_abilities"
+			{
+				"venomancer_poison_nova"
+				{
+					"radius"		"45"
+					"speed"			"27.5"
+				}
+			}
+		}
+		"impact_damage"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+
+			"linked_special_values"
+			{
+				"health_damage"
+				{
+					"value" "0.5"
+					"operator" "OP_MULTIPLY"
+
+					"multiplicative_target"			"20"
+					"multiplicative_base_value"		"7.5"
+				}
+			}
+
+			"linked_abilities"
+			{
+				"venomancer_poison_nova"
+				{
+					"damage"
+					{
+						"value" "0.3"
+						"operator" "OP_MULTIPLY"
+
+						"multiplicative_target"			"10"
+						"multiplicative_base_value"		"3"
+					}
+				}
+			}
+		}
+	}
+}

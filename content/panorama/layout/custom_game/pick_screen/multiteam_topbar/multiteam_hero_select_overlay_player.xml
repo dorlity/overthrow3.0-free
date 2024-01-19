@@ -1,0 +1,16 @@
+<!-- xml reconstructed by Source 2 Viewer 7.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/pick_screen/multiteam_topbar/multiteam_hero_select_overlay.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/party_highlighter/party_highlighter.vcss_c" />
+	</styles>
+	<Panel hittest="false" class="HeroSelectPlayerRoot">
+		<Image id="PlayerPortrait" scaling="stretch-to-fit-preserve-aspect">
+			<Panel id="PlayerPortraitOverlay" class="PlayerPortraitOverlay" />
+			<Panel id="PortraitBorderGradient" class="PortraitBorderGradient" />
+		</Image>
+		<Label id="PlayerName" />
+		<Label id="PlayerStreak" onmouseover="DOTAShowTextTooltip(Win Streak)" onmouseout="DOTAHideTextTooltip()" text="#HeroSelectionStreak" html="true" />
+	</Panel>
+</root>

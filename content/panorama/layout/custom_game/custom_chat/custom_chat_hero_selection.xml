@@ -1,0 +1,14 @@
+<!-- xml reconstructed by Source 2 Viewer 7.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<scripts>
+		<include src="s2r://panorama/layout/custom_game/scripts/utils.vjs_c" />
+	</scripts>
+	<script><![CDATA[
+		let default_players_colors = {};
+		for (let player_id = 0; player_id <= 24; player_id++)
+			default_players_colors[player_id] = GetHEXPlayerColor(player_id);
+
+		GameEvents.SendToServerEnsured("custom_chat:update_guild_tag_colors", { colors: default_players_colors });
+	]]></script>
+	<Panel hittest="false" style="visibility:collapse;" />
+</root>

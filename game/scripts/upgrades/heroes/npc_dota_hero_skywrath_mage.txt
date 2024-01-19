@@ -1,0 +1,82 @@
+"npc_dota_hero_skywrath_mage"
+{
+	"skywrath_mage_arcane_bolt"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"bolt_speed"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+		}
+		"bolt_damage"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+		}
+	}
+	"skywrath_mage_concussive_shot"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"slow_radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"damage"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+		}
+		"speed"
+		{
+			"value" "80"
+			"operator" "OP_ADD"
+		}
+	}
+	"skywrath_mage_ancient_seal"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"resist_debuff"
+		{
+			"value" "-3"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+	}
+	"skywrath_mage_mystic_flare"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"damage"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+		}
+	}
+}

@@ -1,0 +1,75 @@
+"npc_dota_hero_pugna"
+{
+	"pugna_nether_blast"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"delay"
+		{
+			"value" "-0.175"
+			"operator" "OP_ADD"
+			"max_count" "4"
+			"min_rarity" "rare"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"blast_damage"
+		{
+			"value" "65"
+			"operator" "OP_ADD"
+		}
+	}
+	"pugna_decrepify"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"bonus_heal_amp_pct_allies"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+		}
+		"bonus_spell_damage_pct"
+		{
+			"value" "-10"
+			"operator" "OP_ADD"
+			"max_count" "6"
+		}
+	}
+	"pugna_nether_ward"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"mana_multiplier"
+		{
+			"value" "0.15"
+			"operator" "OP_ADD"
+		}
+	}
+	"pugna_life_drain"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"health_drain"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+		}
+	}
+}

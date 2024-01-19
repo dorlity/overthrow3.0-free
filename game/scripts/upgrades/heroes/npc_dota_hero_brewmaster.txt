@@ -1,0 +1,250 @@
+"npc_dota_hero_brewmaster"
+{
+	"brewmaster_thunder_clap"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_special_values"
+			{
+				"duration" "0.5"
+			}
+		}
+		"radius"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"movement_slow" "5"
+				"attack_speed_slow" "15"
+			}
+		}
+		"damage"
+		{
+			"value" "100"
+			"operator" "OP_ADD"
+		}
+	}
+	"brewmaster_cinder_brew"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"total_damage"
+		{
+			"value" "100"
+			"operator" "OP_ADD"
+			"talents"
+			{
+				"special_bonus_unique_brewmaster_5"	"x1.3"
+			}
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"brewmaster_drunken_brawler"
+	{
+		"armor"
+		{
+			"value" "1"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"magic_resist"
+				{
+					"value" "2"
+					"operator" "OP_MULTIPLY"
+
+					"multiplicative_target"			"100"
+					"multiplicative_base_value"		"20"
+				}
+			}
+			"linked_abilities"
+			{
+				"brewmaster_earth_hurl_boulder"
+				{
+					"damage" "100"
+					"speed" "80"
+				}
+			}
+		}
+		"crit_chance"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"crit_multiplier" "20"
+				"attack_speed" "10"
+			}
+			"linked_abilities"
+			{
+				"brewmaster_fire_permanent_immolation"
+				{
+					"damage" "35"
+					"radius"
+					{
+						"value" "45"
+						"operator" "OP_MULTIPLY"
+
+						"multiplicative_target"			"620"
+						"multiplicative_base_value"		"220"
+					}
+				}
+			}
+		}
+		"dodge_chance"
+		{
+			"value" "7"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"bonus_move_speed" "7"
+			}
+			"linked_abilities"
+			{
+				"brewmaster_storm_dispel_magic"
+				{
+					"damage" "400"
+					"radius"
+					{
+						"value" "45"
+						"operator" "OP_MULTIPLY"
+
+						"multiplicative_target"			"1000"
+						"multiplicative_base_value"		"600"
+					}
+				}
+				"brewmaster_storm_wind_walk"
+				{
+					"bonus_damage" "130"
+					"bonus_movement_speeed" "30"
+				}
+			}
+		}
+		"bonus_status_resist"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+
+			"multiplicative_target"			"100"
+			"multiplicative_base_value"		"20"
+
+			"linked_special_values"
+			{
+				"movespeed" "5"
+				"operator" "OP_MULTIPLY"
+
+				"multiplicative_target"			"100"
+				"multiplicative_base_value"		"25"
+			}
+			"linked_abilities"
+			{
+				"brewmaster_void_astral_pull"
+				{
+					"damage" "125"
+					"AbilityCastRange"
+					{
+						"value" "45"
+						"operator" "OP_MULTIPLY"
+
+						"multiplicative_target"			"550"
+						"multiplicative_base_value"		"150"
+					}
+					"pull_distance"
+					{
+						"value" "45"
+						"operator" "OP_MULTIPLY"
+
+						"multiplicative_target"			"1100"
+						"multiplicative_base_value"		"700"
+					}
+				}
+			}
+		}
+	}
+	"brewmaster_primal_split"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+			
+			"linked_abilities"
+			{
+				"brewmaster_primal_companion"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+				"brewmaster_earth_hurl_boulder"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+				"brewmaster_void_astral_pull"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+				"brewmaster_storm_dispel_magic"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+				"brewmaster_storm_cyclone"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+				"brewmaster_storm_wind_walk"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+				"brewmaster_primal_companion"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"brewling_added_health"
+		{
+			"value"	"400"
+			"operator" "OP_ADD"
+		}
+	}
+}

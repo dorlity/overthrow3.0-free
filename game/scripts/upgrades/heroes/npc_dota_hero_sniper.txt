@@ -1,0 +1,105 @@
+"npc_dota_hero_sniper"
+{
+	"sniper_shrapnel"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_abilities"
+			{
+				"sniper_concussive_grenade"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"sniper_concussive_grenade"
+				{
+					"radius" "30"
+				}
+			}
+		}
+		"shrapnel_damage"
+		{
+			"value" "14"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"sniper_concussive_grenade"
+				{
+					"damage" "30"
+				}
+			}
+		}
+		"duration"
+		{
+			"value" "1.5"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"sniper_concussive_grenade"
+				{
+					"debuff_duration" "0.5"
+				}
+			}
+		}
+	}
+	"sniper_headshot"
+	{
+		"proc_chance"
+		{
+			"value" "6"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"damage"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+		}
+	}
+	"sniper_take_aim"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"duration"
+		{
+			"value" "1"
+			"operator" "OP_ADD"
+		}
+		"slow"
+		{
+			"value" "-10"
+			"operator" "OP_ADD"
+			"max_count" "3"
+		}
+	}
+	"sniper_assassinate"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage"
+		{
+			"value" "105"
+			"operator" "OP_ADD"
+		}
+	}
+}

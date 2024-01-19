@@ -1,0 +1,28 @@
+<!-- xml reconstructed by Source 2 Viewer 7.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/top_menu/top_menu.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/layout/custom_game/scripts/utils.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/top_menu/top_menu.vjs_c" />
+	</scripts>
+	<Panel class="CustomTopMenu_Root" hittest="false">
+		<Button id="CollectionButton" class="Custom_TopButton" onactivate="GameUI.Custom_ToggleCollection();" onmouseover="DOTAShowTextTooltip(#open_collection)" onmouseout="DOTAHideTextTooltip()">
+			<Panel class="CTP_Icon" />
+		</Button>
+		<Button id="MailButton" class="Custom_TopButton" onactivate="GameUI.ToggleMailPanel();" onmouseover="DOTAShowTextTooltip(#open_mail)" onmouseout="DOTAHideTextTooltip()">
+			<Panel class="CTP_Icon" />
+		</Button>
+		<Button id="FeedbackButton" class="Custom_TopButton" onactivate="GameUI.ToggleFeedback();" onmouseover="DOTAShowTextTooltip(#feedback_top_menu_hint)" onmouseout="DOTAHideTextTooltip()">
+			<Panel class="CTP_Icon" />
+		</Button>
+		<Button id="CustomSettingsButton" class="Custom_TopButton" onactivate="GameUI.ToggleSettings();" onmouseover="DOTAShowTextTooltip(#settings_top_menu_hint)" onmouseout="DOTAHideTextTooltip()">
+			<Panel class="CTP_Icon" />
+		</Button>
+		<Button id="LeaderboardButton" class="Custom_TopButton" onactivate="GameUI.ToggleLeaderboard();" onmouseover="DOTAShowTextTooltip(#leaderboard_top_menu_hint)" onmouseout="DOTAHideTextTooltip()">
+			<Panel class="CTP_Icon" />
+		</Button>
+	</Panel>
+</root>

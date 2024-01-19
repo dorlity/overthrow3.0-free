@@ -1,0 +1,112 @@
+"npc_dota_hero_viper"
+{
+	"viper_poison_attack"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage"
+		{
+			"value"				"2.5"
+			"talents"
+			{
+				"special_bonus_unique_viper_7"	"x1.25"
+			}
+			"operator" "OP_ADD"
+		}
+		"max_stacks"
+		{
+			"value" "1"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+	}
+	"viper_nethertoxin"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"viper_nose_dive"
+				{
+					"cooldown_and_manacost" "8"
+				}
+			}
+		}
+		"max_damage"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"min_damage" "5"
+			}
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"viper_nose_dive"
+				{
+					"radius" "30"
+				}
+			}
+		}
+	}
+	"viper_corrosive_skin"
+	{
+		"duration"
+		{
+			"value" "0.5"
+			"operator" "OP_ADD"
+			"max_count" "8"
+			"min_rarity" "rare"
+		}
+		"bonus_magic_resistance"
+		{
+			"value" "3"
+			"operator" "OP_MULTIPLY"
+
+			"multiplicative_target"			"100"
+			"multiplicative_base_value"		"40"
+			
+			"linked_special_values"
+			{
+				"bonus_attack_speed" "5"
+			}
+		}
+		"damage"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+		}
+	}
+	"viper_viper_strike"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"duration"
+		{
+			"value" "0.5"
+			"operator" "OP_ADD"
+			"max_count" "8"
+			"min_rarity" "rare"
+		}
+		"damage"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+		}
+	}
+}

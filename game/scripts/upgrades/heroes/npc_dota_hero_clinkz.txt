@@ -1,0 +1,95 @@
+"npc_dota_hero_clinkz"
+{
+	"clinkz_strafe"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+
+			"linked_abilities"
+			{
+				"clinkz_burning_barrage"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"attack_speed_bonus"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+		}
+		"duration"
+		{
+			"value" 	"0.5"
+			"operator" 	"OP_ADD"
+			"max_count"	"7"
+		}
+	}
+	"clinkz_tar_bomb"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"impact_damage"
+		{
+			"value" "18"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"damage_bonus" "8"
+			}
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count"	"10"
+		}
+	}
+	"clinkz_death_pact"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"health_gain"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+		}
+	}
+	"clinkz_wind_walk"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+			"linked_abilities"
+			{
+				"clinkz_burning_army"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"move_speed_bonus_pct"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+		}
+	}
+}

@@ -1,0 +1,35 @@
+"npc_dota_hero_ursa"
+{
+	"ursa_earthshock"
+	{
+		"damage"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+		}
+		"hop_distance"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"ursa_overpower"
+	{
+		"max_attacks"
+		{
+			"value" "0.5"
+			"operator" "OP_ADD"
+			"min_rarity" "rare"
+			"max_count" "4"
+		}
+	}
+	"ursa_fury_swipes"
+	{
+		"damage_per_stack"
+		{
+			"value" "1"
+			"operator" "OP_ADD"
+		}
+	}
+}

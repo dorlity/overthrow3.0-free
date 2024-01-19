@@ -1,0 +1,92 @@
+"npc_dota_hero_bounty_hunter"
+{
+	"bounty_hunter_shuriken_toss"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"bonus_damage"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+		}
+		"bounce_aoe"
+		{
+			"value" "200"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"slow_duration" "0.1"
+			}
+		}
+	}
+	"bounty_hunter_jinada"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_special_values"
+			{
+				"gold_steal" "15"
+			}
+		}
+		"bonus_damage"
+		{
+			"value" "80"
+			"operator" "OP_ADD"
+		}
+	}
+	"bounty_hunter_wind_walk"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+			"linked_special_values"
+			{
+				"stun_duration" "0.2"
+			}
+		}
+	}
+	"bounty_hunter_track"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"target_crit_multiplier"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"toss_crit_multiplier" "15"
+			}
+		}
+		"bonus_gold_self"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"bonus_gold" "20"
+			}
+		}
+		"duration"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"bonus_move_speed_pct" "4"
+			}
+		}
+	}
+}

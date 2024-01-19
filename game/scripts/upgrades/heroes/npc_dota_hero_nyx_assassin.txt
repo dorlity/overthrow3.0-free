@@ -1,0 +1,75 @@
+"npc_dota_hero_nyx_assassin"
+{
+	"nyx_assassin_impale"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"impale_damage"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+		}
+	}
+	"nyx_assassin_jolt"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"float_multiplier"
+		{
+			"value" "0.3"
+			"operator" "OP_ADD"
+		}
+		"damage_echo_pct"
+		{
+			"value" "3"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+	}
+	"nyx_assassin_spiked_carapace"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"reflect_duration"
+		{
+			"value" "0.3"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+		"damage_reflect_pct"
+		{
+			"value" "11"
+			"operator" "OP_ADD"
+		}
+	}
+	"nyx_assassin_vendetta"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"movement_speed"
+		{
+			"value" "6"
+			"operator" "OP_ADD"
+		}
+		"bonus_damage"
+		{
+			"value" "90"
+			"operator" "OP_ADD"
+		}
+	}
+}

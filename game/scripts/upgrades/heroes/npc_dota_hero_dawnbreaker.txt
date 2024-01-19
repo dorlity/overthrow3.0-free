@@ -1,0 +1,115 @@
+"npc_dota_hero_dawnbreaker"
+{
+	"dawnbreaker_fire_wreath"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"swipe_radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"smash_radius" "30"
+			}
+		}
+		"swipe_damage"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+		}
+	}
+	"dawnbreaker_celestial_hammer"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"pause_duration" "-0.2"
+				"projectile_speed" "150"
+			}
+		}
+		"hammer_damage"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"burn_damage" "15"
+			}
+		}
+		"flare_radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"flare_debuff_duration" "1"
+				"projectile_radius" "30"
+				"hammer_aoe_radius" "30"
+			}
+		}
+	}
+	"dawnbreaker_luminosity"
+	{
+		"heal_pct"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"allied_healing_pct" "5"
+				"heal_radius" "100"
+			}
+		}
+		"bonus_damage"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+		}
+	}
+	"dawnbreaker_solar_guardian"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+			"max_count" "15"
+			"linked_special_values"
+			{
+				"airtime_scepter_movement_speed" "40"
+			}
+		}
+		"radius"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"max_offset_distance" "50"
+				"miss_rate" "4"
+			}
+		}
+		"base_damage"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"land_damage" "70"
+				"base_heal" "40"
+			}
+		}
+	}
+}

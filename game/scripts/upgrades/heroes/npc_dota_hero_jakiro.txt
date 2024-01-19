@@ -1,0 +1,109 @@
+"npc_dota_hero_jakiro"
+{
+	"jakiro_dual_breath"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "11"
+			"operator" "OP_MULTIPLY"
+		}
+		"burn_damage"
+		{
+			"value"	"12"
+			"operator" "OP_ADD"
+			"talents"
+			{
+				"special_bonus_unique_jakiro_2"	"x2"
+			}
+		}
+		"end_radius"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"start_radius" "40"
+			}
+		}
+	}
+	"jakiro_ice_path"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+			"max_count" "3"
+		}
+		"damage"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+		}
+		"path_radius"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+	}
+	"jakiro_liquid_fire"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "15"
+			"operator" "OP_MULTIPLY"
+			"linked_abilities"
+			{
+				"jakiro_liquid_ice"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "15"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"radius"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"jakiro_liquid_ice"
+				{
+					"radius" "60"
+				}
+			}
+		}
+		"damage"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"jakiro_liquid_ice"
+				{
+					"pct_health_damage" "0.5"
+					"base_damage" "5"
+				}
+			}
+		}
+	}
+	"jakiro_macropyre"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"damage"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+		}
+	}
+}

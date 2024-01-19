@@ -1,0 +1,97 @@
+"npc_dota_hero_leshrac"
+{
+	"leshrac_split_earth"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"damage"
+		{
+			"value" "45"
+			"operator" "OP_ADD"
+		}
+	}
+	"leshrac_diabolic_edict"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "6"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"damage"
+		{
+			"value" "2.5"
+			"operator" "OP_ADD"
+		}
+	}
+	"leshrac_lightning_storm"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+			"linked_abilities"
+			{
+				"leshrac_greater_lightning_storm_lua"
+				{
+					"cooldown_and_manacost" "8"
+				}
+			}
+		}
+		"damage"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"leshrac_greater_lightning_storm_lua"
+				{
+					"radius" "30"
+				}
+			}
+		}
+		"jump_count"
+		{
+			"value" "2"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+	}
+	"leshrac_pulse_nova"
+	{
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"damage"
+		{
+			"value" "8"
+			"operator" "OP_ADD"
+		}
+	}
+}

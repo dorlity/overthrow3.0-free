@@ -1,0 +1,112 @@
+"npc_dota_hero_dragon_knight"
+{
+	"dragon_knight_breathe_fire"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_abilities"
+			{
+				"dragon_knight_fireball"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"reduction"
+		{
+			"value" "-5"
+			"operator" "OP_ADD"
+			"max_count" "8"
+		}
+		"start_radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"end_radius" "30"
+			}
+			"linked_abilities"
+			{
+				"dragon_knight_fireball"
+				{
+					"radius" "30"
+				}
+			}
+		}
+		"damage"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"dragon_knight_fireball"
+				{
+					"damage" "11"
+				}
+			}
+		}
+	}
+	"dragon_knight_dragon_tail"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"damage"
+		{
+			"value" "80"
+			"operator" "OP_ADD"
+		}
+	}
+	"dragon_knight_dragon_blood"
+	{
+		"bonus_health_regen"
+		{
+			"value" "12"
+			"operator" "OP_ADD"
+		}
+		"bonus_armor"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+		}
+	}
+	"dragon_knight_elder_dragon_form"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"bonus_movement_speed"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"corrosive_breath_damage" "5"
+				"splash_damage_percent" "15"
+			}
+		}
+		"splash_radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"frost_aoe" "30"
+			}
+		}
+	}
+}

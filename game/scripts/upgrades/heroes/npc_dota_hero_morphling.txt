@@ -1,0 +1,126 @@
+"npc_dota_hero_morphling"
+{
+	"morphling_waveform"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "15"
+		}
+		"damage"
+		{
+			"value" "80"
+			"operator" "OP_ADD"
+		}
+		"width"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"morphling_adaptive_strike_agi"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"morphling_adaptive_strike_str"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"damage_base"
+		{
+			"value" "65"
+			"operator" "OP_ADD"
+		}
+		"damage_max"
+		{
+			"value" "0.4"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"damage_min" "0.1"
+			}
+			"linked_abilities"
+			{
+				"morphling_adaptive_strike_str"
+				{
+					"knockback_max" "75"
+					"knockback_min" "15"
+				}
+			}
+		}
+		"shared_cooldown"
+		{
+			"value" "-3"
+			"operator" "OP_ADD"
+			"max_count" "1"
+			"linked_abilities"
+			{
+				"morphling_adaptive_strike_str"
+				{
+					"shared_cooldown" "-3"
+				}
+			}
+		}
+	}
+	"morphling_morph_agi"
+	{
+		"mana_cost"
+		{
+			"value" "-10"
+			"operator" "OP_ADD"
+			"max_count" "2"
+			"linked_abilities"
+			{
+				"morphling_morph_str"
+				{
+					"mana_cost" "-10"
+				}
+			}
+		}
+	}
+	"morphling_replicate"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_special_values"
+			{
+				"scepter_illusion_outgoing"
+				{
+					"value" "20"
+					"operator" "OP_ADD"
+				}
+			}
+		}
+		"duration"
+		{
+			"value" "3"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"scepter_illusion_incoming"
+				{
+					"value" "-45"
+					"operator" "OP_MULTIPLY"
+					
+					"multiplicative_target" "0"
+					"multiplicative_base_value" "300"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,101 @@
+"npc_dota_hero_tinker"
+{
+	"tinker_laser"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"laser_damage"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+		}
+		"radius_explosion"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"tinker_heat_seeking_missile"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage"
+		{
+			"value" "45"
+			"operator" "OP_ADD"
+		}
+		"targets"
+		{
+			"value" "0.25"
+			"operator" "OP_ADD"
+			"min_rarity" "epic"
+		}
+		"speed"
+		{
+			"value" "70"
+			"operator" "OP_ADD"
+		}
+	}
+	"tinker_defense_matrix"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_abilities"
+			{
+				"tinker_warp_grenade"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"damage_absorb"
+		{
+			"value" "70"
+			"operator" "OP_ADD"
+		}
+		"status_resistance"
+		{
+			"value" "6"
+			"operator" "OP_MULTIPLY"
+
+			"multiplicative_target"			"100"
+			"multiplicative_base_value"		"40"
+		}
+		"barrier_duration"
+		{
+			"value" "3"
+			"operator" "OP_ADD"
+			"max_count" "5"
+			
+			"linked_abilities"
+			{
+				"tinker_warp_grenade"
+				{
+					"debuff_duration" "0.5"
+					"knockback_distance" "100"
+				}
+			}
+		}
+	}
+	"tinker_rearm"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+	}
+}

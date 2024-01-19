@@ -1,0 +1,8 @@
+ot3_gardens_duo
+{
+	material materials/overviews/ot3_gardens_duo.vmat
+	pos_x -5632
+	pos_y 5632
+	scale 11.000
+}
+

@@ -1,0 +1,16 @@
+"npc_dota_hero_marci"
+{
+	"marci_guardian"
+	{
+		"lifesteal_pct"
+		{
+			"value" "12"
+			"operator" "OP_ADD"
+		}
+		"bonus_damage"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+		}
+	}
+}

@@ -1,0 +1,17 @@
+<!-- xml reconstructed by Source 2 Viewer 7.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/pick_screen/multiteam_topbar/multiteam_hero_select_overlay.vcss_c" />
+	</styles>
+	<Panel hittest="false" class="HeroSelectTeamRoot">
+		<Panel id="TeamHeaderAndPlayers">
+			<Panel>
+				<Panel id="PlayerPortraitsOverlay" />
+				<Panel id="PlayersContainer" />
+			</Panel>
+			<Panel id="TeamColor_Select" class="TeamColor_Select_Overlay" />
+		</Panel>
+		<Panel id="TeamLogo" />
+	</Panel>
+</root>

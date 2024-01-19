@@ -1,0 +1,83 @@
+"npc_dota_hero_vengefulspirit"
+{
+	"vengefulspirit_magic_missile"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"magic_missile_damage"
+		{
+			"value" "55"
+			"operator" "OP_ADD"
+		}
+	}
+	"vengefulspirit_wave_of_terror"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"wave_width"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"vision_aoe" "60"
+			}
+		}
+		"armor_reduction"
+		{
+			"value" "-1.5"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"damage" "20"
+			}
+		}
+		"attack_reduction"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+			"max_count"	"10"
+		}
+	}
+	"vengefulspirit_command_aura"
+	{
+		"bonus_base_damage"
+		{
+			"value" "6"
+			"operator" "OP_ADD"
+		}
+		"aura_radius"
+		{
+			"value" "180"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"vengefulspirit_nether_swap"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage"
+		{
+			"value" "70"
+			"operator" "OP_ADD"
+		}
+		"damage_reduction_duration"
+		{
+			"value" "2"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+	}
+}

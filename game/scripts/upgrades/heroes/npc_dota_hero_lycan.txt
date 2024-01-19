@@ -1,0 +1,90 @@
+"npc_dota_hero_lycan"
+{
+	"lycan_summon_wolves"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"wolf_damage"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+		}
+		"wolf_hp"
+		{
+			"value" "350"
+			"operator" "OP_ADD"
+		}
+	}
+	"lycan_howl"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"attack_damage_reduction"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"armor"
+		{
+			"value" "1.5"
+			"operator" "OP_ADD"
+		}
+	}
+	"lycan_feral_impulse"
+	{
+		"bonus_damage"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+		}
+		"bonus_hp_regen"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+		}
+	}
+	"lycan_shapeshift"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_abilities"
+			{
+				"lycan_wolf_bite"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"speed"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+		}
+		"crit_chance"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+			"max_count" "15"
+		}
+		"crit_multiplier"
+		{
+			"value" "14"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+}

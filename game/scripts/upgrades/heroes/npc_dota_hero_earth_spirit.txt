@@ -1,0 +1,132 @@
+"npc_dota_hero_earth_spirit"
+{
+	"earth_spirit_boulder_smash"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+			"linked_abilities"
+			{
+				"earth_spirit_petrify"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"rock_search_aoe" "30"
+			}
+			"linked_abilities"
+			{
+				"earth_spirit_petrify"
+				{
+					"aoe" "30"
+				}
+			}
+		}
+		"rock_damage"
+		{
+			"value" "70"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"earth_spirit_petrify"
+				{
+					"damage" "70"
+				}
+			}
+		}
+	}
+	"earth_spirit_rolling_boulder"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"damage"
+		{
+			"value" "70"
+			"operator" "OP_ADD"
+		}
+		"speed"
+		{
+			"value" "120"
+			"operator" "OP_ADD"
+			"max_count" "5"
+			"linked_special_values"
+			{
+				"rock_speed" "200"
+				"delay" "-0.1"
+			}
+		}
+	}
+	"earth_spirit_geomagnetic_grip"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"rock_damage"
+		{
+			"value" "100"
+			"operator" "OP_ADD"
+		}
+	}
+	"earth_spirit_magnetize"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"cast_radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"rock_search_radius" "30"
+				"rock_explosion_radius" "30"
+			}
+			"linked_abilities"
+			{
+				"earth_spirit_stone_caller"
+				{
+					"vision_radius" "30"
+				}
+			}
+		}
+		"damage_per_second"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"talents"
+			{
+				"special_bonus_unique_earth_spirit_8"		"x1.25"
+			}
+		}
+	}
+}

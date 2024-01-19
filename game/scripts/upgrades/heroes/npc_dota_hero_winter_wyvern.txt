@@ -1,0 +1,108 @@
+"npc_dota_hero_winter_wyvern"
+{
+	"winter_wyvern_arctic_burn"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_special_values"
+			{
+				"movement_scepter" "6"
+				"mana_cost_scepter"
+				{
+					"value" "-2"
+					"operator" "OP_MULTIPLY"
+
+					"multiplicative_target"			"0"
+					"multiplicative_base_value"		"20"
+				}
+			}
+		}
+		"percent_damage"
+		{
+			"value" "3"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+
+			"multiplicative_target"			"100"
+			"multiplicative_base_value"		"10"
+			"linked_special_values"
+			{
+				"night_vision_bonus" "60"
+			}
+		}
+	}
+	"winter_wyvern_splinter_blast"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "8"
+		}
+		"split_radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"winter_wyvern_cold_embrace"
+				{
+					"shard_splinter_range" "30"
+				}
+			}
+		}
+		"damage"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+		}
+	}
+	"winter_wyvern_cold_embrace"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "8"
+		}
+		"heal_additive"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"heal_percentage" "0.75"
+			}
+		}
+	}
+	"winter_wyvern_winters_curse"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"damage_reduction" "-10"
+			}
+		}
+		"damage_amplification"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"bonus_attack_speed" "25"
+			}
+		}
+	}
+}

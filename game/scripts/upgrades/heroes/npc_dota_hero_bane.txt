@@ -1,0 +1,82 @@
+"npc_dota_hero_bane"
+{
+	"bane_enfeeble"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage_reduction"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+			"max_count" "6"
+			"linked_special_values"
+			{
+				"cast_reduction" "5"
+			}
+		}
+		"enfeeble_tick_damage"
+		{
+			"value" "8"
+			"operator" "OP_ADD"
+		}
+	}
+	"bane_brain_sap"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "7"
+			"operator" "OP_MULTIPLY"
+		}
+		"brain_sap_damage"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+		}
+		"shard_radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"shard_secondary_target_heal_pct" "2.5"
+			}
+		}
+	}
+	"bane_nightmare"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "3"
+		}
+		"nightmare_invuln_time"
+		{
+			"value" "0.5"
+			"operator" "OP_ADD"
+			"max_count" "4"
+		}
+		"bonus_attack_speed"
+		{
+			"value" "60"
+		}
+	}
+	"bane_fiends_grip"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "15"
+		}
+		"fiend_grip_damage"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+		}
+	}
+}

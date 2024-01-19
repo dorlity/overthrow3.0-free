@@ -1,0 +1,110 @@
+"npc_dota_hero_snapfire"
+{
+	"snapfire_scatterblast"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage"
+		{
+			"value" "55"
+			"operator" "OP_ADD"
+		}
+		"point_blank_dmg_bonus_pct"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"snapfire_firesnap_cookie"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"impact_radius"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"impact_damage"
+		{
+			"value" "70"
+			"operator" "OP_ADD"
+		}
+	}
+	"snapfire_lil_shredder"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"armor_reduction_per_attack"
+		{
+			"value" "0.1"
+			"operator" "OP_ADD"
+		}
+	}
+	"snapfire_mortimer_kisses"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_abilities"
+			{
+				"snapfire_gobble_up"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"impact_radius"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"snapfire_spit_creep"
+				{
+					"impact_radius" "35"
+				}
+			}
+		}
+		"damage_per_impact"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+		}
+		"burn_damage"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"burn_ground_duration" "0.5"
+			}
+			"linked_abilities"
+			{
+				"snapfire_spit_creep"
+				{
+					"burn_damage" "20"
+					"burn_ground_duration" "0.5"
+				}
+			}
+		}
+	}
+}

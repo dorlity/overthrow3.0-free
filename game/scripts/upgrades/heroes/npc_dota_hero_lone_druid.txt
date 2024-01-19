@@ -1,0 +1,103 @@
+"npc_dota_hero_lone_druid"
+{
+	"lone_druid_spirit_bear"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"bear_bat"
+		{
+			"value" "-0.1"
+			"operator" "OP_MULTIPLY"
+
+			"multiplicative_target"			"0"
+			"multiplicative_base_value"		"1.35"
+		}
+		"bear_hp"
+		{
+			"value" "700"
+			"operator" "OP_ADD"
+		}
+		"bear_movespeed"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+		}
+	}
+	"lone_druid_spirit_link"
+	{
+		"bonus_attack_speed"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+		}
+		"lifesteal_percent"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"duration" "2"
+			}
+		}
+		"armor_sharing"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+		}
+	}
+	"lone_druid_savage_roar"
+	{
+		"bonus_speed"
+		{
+			"value" "-5"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"shard_movement_speed_pct" "5"
+				"shard_attack_speed" "20"
+			}
+			"linked_abilities"
+			{
+				"lone_druid_savage_roar_bear"
+				{
+					"bonus_speed" "-5"
+				}
+			}
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"shard_radius" "105"
+				"shard_duration" "1"
+			}
+			"linked_abilities"
+			{
+				"lone_druid_savage_roar_bear"
+				{
+					"radius" "30"
+				}
+			}
+		}
+	}
+	"lone_druid_true_form"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"bonus_hp"
+		{
+			"value" "700"
+			"operator" "OP_ADD"
+		}
+	}
+}

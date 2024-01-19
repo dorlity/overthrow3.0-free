@@ -1,0 +1,99 @@
+"npc_dota_hero_luna"
+{
+	"luna_lucent_beam"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"beam_damage"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+		}
+	}
+	"luna_moon_glaive"
+	{
+		"range"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+
+			"linked_special_values"
+			{
+				"rotating_glaives_movement_radius"		"30"
+			}
+		}
+		"bounces"
+		{
+			"value" "1"
+			"operator" "OP_ADD"
+			"max_count" "6"
+			
+			"linked_special_values"
+			{
+				"rotating_glaives_duration"		"1"
+			}
+		}
+		"damage_reduction_percent"
+		{
+			"value" "-3"
+			"operator" "OP_ADD"
+			"max_count" "9"
+
+			"linked_special_values"
+			{
+				"rotating_glaives_collision_damage"		"5" // %
+			}
+		}
+	}
+	"luna_lunar_blessing"
+	{
+		"bonus_night_vision"
+		{
+			"value" "150"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"radius" "180"
+			}
+		}
+		"bonus_damage"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"luna_lucent_beam"
+				{
+					"damage_buff_per_beam" "3"
+				}
+			}
+		}
+	}
+	"luna_eclipse"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"beams"
+		{
+			"value" "2"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"radius"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+}

@@ -1,0 +1,110 @@
+"npc_dota_hero_tidehunter"
+{
+	"tidehunter_gush"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"gush_damage"
+		{
+			"value" "55"
+			"operator" "OP_ADD"
+		}
+		"negative_armor"
+		{
+			"value" "1.5"
+			"operator" "OP_ADD"
+		}
+	}
+	"tidehunter_kraken_shell"
+	{
+		"damage_reduction"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+		}
+		"damage_cleanse"
+		{
+			"value" "-70"
+			"operator" "OP_ADD"
+			"max_count" "4"
+		}
+	}
+	"tidehunter_anchor_smash"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"attack_damage"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+		}
+		"damage_reduction"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+			"max_count" "2"
+		}
+		"radius"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"tidehunter_ravage"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "15"
+			"linked_abilities"
+			{
+				"tidehunter_dead_in_the_water"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"damage"
+		{
+			"value" "125"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"tidehunter_dead_in_the_water"
+				{
+					"damage" "75"
+				}
+			}
+		}
+		"radius"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"speed" "29"
+			}
+			"linked_abilities"
+			{
+				"tidehunter_dead_in_the_water"
+				{
+					"attacks_to_destroy" "1"
+					"chain_length" "-20"
+				}
+			}
+		}
+	}
+}

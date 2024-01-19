@@ -1,0 +1,112 @@
+"npc_dota_hero_necrolyte"
+{
+	"necrolyte_death_pulse"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_abilities"
+			{
+				"necrolyte_death_seeker"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"area_of_effect"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"heal"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"damage" "40"
+			}
+		}
+	}
+	"necrolyte_sadist"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"heal_bonus"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+		}
+		"slow_aoe"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"bonus_damage"
+		{
+			"value" "2.5"
+			"operator" "OP_ADD"
+			"min_rarity" "rare"
+			"max_count" "10"
+		}
+	}
+	"necrolyte_heartstopper_aura_custom"
+	{
+		"aura_radius"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"aura_damage"
+		{
+			"value" "0.3"
+			"operator" "OP_MULTIPLY"
+
+			"multiplicative_target"			"12.5"
+			"multiplicative_base_value"		"2.9"
+		}
+		"health_regen"
+		{
+			"value" "2"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"mana_regen" "2"
+			}
+		}
+	}
+	"necrolyte_reapers_scythe"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage_per_health"
+		{
+			"value" "0.1"
+			"operator" "OP_ADD"
+		}
+		"hp_per_kill"
+		{
+			"value" "2"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"mana_per_kill" "1"
+			}
+		}
+	}
+}

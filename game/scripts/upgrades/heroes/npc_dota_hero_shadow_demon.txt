@@ -1,0 +1,121 @@
+"npc_dota_hero_shadow_demon"
+{
+	"shadow_demon_disruption"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"illusion_outgoing_damage"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+			
+			"linked_special_values"
+			{
+				"illusion_outgoing_tooltip" "15"
+			}
+		}
+		"illusion_incoming_damage"
+		{
+			"value" "-30"
+			"operator" "OP_MULTIPLY"
+			
+			"multiplicative_target"			"-100"
+			"multiplicative_base_value"		"200"
+			
+			"linked_special_values"
+			{
+				"tooltip_total_illusion_incoming_damage"
+				{
+					"value" "-30"
+				
+					"operator" "OP_MULTIPLY"
+					"multiplicative_target" "0"
+				}
+			}
+		}
+	}
+	"shadow_demon_disseminate"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage_reflection_pct"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"shadow_demon_shadow_poison"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"stack_damage"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"hit_damage" "15"
+				"bonus_stack_damage" "12"
+			}
+		}
+		"radius"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"speed"
+		{
+			"value" "150"
+			"operator" "OP_ADD"
+		}
+	}
+	"shadow_demon_demonic_purge"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_abilities"
+			{
+				"shadow_demon_demonic_cleanse"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"purge_damage"
+		{
+			"value" "150"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"shadow_demon_demonic_cleanse"
+				{
+					"purge_damage" "150"
+				}
+			}
+		}
+	}
+}

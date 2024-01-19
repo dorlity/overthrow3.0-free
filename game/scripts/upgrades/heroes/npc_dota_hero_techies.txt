@@ -1,0 +1,111 @@
+"npc_dota_hero_techies"
+{
+	"techies_sticky_bomb"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"explosion_radius" "30"
+				"countdown" "-0.15"
+			}
+		}
+		"damage"
+		{
+			"value" "55"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"speed" "50"
+			}
+		}
+	}
+	"techies_reactive_tazer"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"bonus_ms"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"shard_damage" "45"
+			}
+		}
+		"stun_radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"techies_suicide"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"damage"
+		{
+			"value" "100"
+			"operator" "OP_ADD"
+		}
+	}
+	"techies_land_mines"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_abilities"
+			{
+				"techies_minefield_sign"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"mres_reduction"
+		{
+			"value" "2.5"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"damage"
+		{
+			"value" "110"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"techies_minefield_sign"
+				{
+					"scepter_move_damage" "45"
+				}
+			}
+		}
+	}
+}

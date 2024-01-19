@@ -1,0 +1,120 @@
+"npc_dota_hero_oracle"
+{
+	"oracle_fortunes_end"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_abilities"
+			{
+				"oracle_rain_of_destiny"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"damage"
+		{
+			"value" "55"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"oracle_rain_of_destiny"
+				{
+					"damage" "10"
+				}
+			}
+		}
+		"bolt_speed"
+		{
+			"value" "120"
+			"operator" "OP_ADD"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"oracle_rain_of_destiny"
+				{
+					"radius" "35"
+				}
+			}
+		}
+	}
+	"oracle_fates_edict"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"duration"
+		{
+			"value" "0.75"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+	}
+	"oracle_purifying_flames"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage"
+		{
+			"value" "36"
+			"operator" "OP_ADD"
+		}
+		"heal_per_second"
+		{
+			"value" "7"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"total_heal_tooltip" "63"
+			}
+			"linked_abilities"
+			{
+				"oracle_rain_of_destiny"
+				{
+					"heal_amp" "3"
+				}
+			}
+		}
+		"duration"
+		{
+			"value" "1.5"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"oracle_rain_of_destiny"
+				{
+					"duration" "1.5"
+				}
+			}
+		}
+	}
+	"oracle_false_promise"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "8"
+		}
+		"heal_amp_pct"
+		{
+			"value" "15"
+		}
+	}
+}

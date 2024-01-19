@@ -1,0 +1,95 @@
+"npc_dota_hero_huskar"
+{
+	"huskar_inner_fire"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage"
+		{
+			"value" "45"
+			"operator" "OP_ADD"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"disarm_duration"
+		{
+			"value" "0.6"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+	}
+	"huskar_burning_spear"
+	{
+		"health_cost"
+		{
+			"value" "-0.5"
+			"operator" "OP_ADD"
+			"min_rarity" "rare"
+			"max_count" "6"
+		}
+		"burn_damage"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+		}
+		"duration"
+		{
+			"value" "1"
+			"operator" "OP_ADD"
+			"max_count" "4"
+		}
+	}
+	"huskar_berserkers_blood"
+	{
+		"maximum_attack_speed"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+		}
+		"maximum_health_regen"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+		}
+		"maximum_magic_resist"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+
+			"multiplicative_target"			"75"
+			"multiplicative_base_value"		"0"
+		}
+		"hp_threshold_max"
+		{
+			"value" "2.5"
+			"operator" "OP_ADD"
+			"min_rarity" "rare"
+			"max_count" "8"
+		}
+	}
+	"huskar_life_break"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"health_damage"
+		{
+			"value" "0.06"
+			"operator" "OP_ADD"
+			"max_count" "6"
+			"linked_special_values"
+			{
+				"tooltip_health_damage" "6"
+			}
+		}
+	}
+}

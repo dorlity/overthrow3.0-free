@@ -1,0 +1,97 @@
+"npc_dota_hero_crystal_maiden"
+{
+	"crystal_maiden_crystal_nova"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_special_values"
+			{
+				"movespeed_slow" "-5"
+				"attackspeed_slow" "-5"
+			}
+		}
+		"radius"
+		{
+			"value" "45"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"nova_damage"
+		{
+			"value" "75"
+			"operator" "OP_ADD"
+		}
+	}
+	"crystal_maiden_frostbite"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+
+			"linked_abilities"
+			{
+				"crystal_maiden_crystal_clone"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+					"frostbite_radius" "120"
+					"hop_distance" "120"
+				}
+			}
+		}
+		"damage_per_second"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"creep_damage_per_second" "30"
+			}
+		}
+	}
+	"crystal_maiden_brilliance_aura"
+	{
+		"base_mana_regen"
+		{
+			"value" "2"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"proximity_mana_regen_tooltip" "6"
+				"self_mana_regen_tooltip" "14"
+			}
+		}
+	}
+	"crystal_maiden_freezing_field"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage"
+		{
+			"value" "45"
+			"operator" "OP_ADD"
+		}
+		"bonus_armor"
+		{
+			"value" "4"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"movespeed_slow" "6"
+				"attack_slow" "15"
+				"shard_self_movement_speed_slow_pct" "7.5"
+			}
+		}
+	}
+}

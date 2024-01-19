@@ -1,0 +1,135 @@
+"npc_dota_hero_phantom_lancer"
+{
+	"phantom_lancer_spirit_lance"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"lance_damage"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"tooltip_illusion_damage" "6"
+				"illusion_damage_out_pct" "6"
+			}
+		}
+		"tooltip_illusion_total_damage_in_pct"
+		{
+			"value" "-60"
+			"operator" "OP_MULTIPLY"
+			
+			"multiplicative_target"			"-100"
+			"multiplicative_base_value"		"300"
+			
+			"linked_special_values"
+			{
+				"illusion_damage_in_pct"
+				{
+					"value" "-60"
+				
+					"operator" "OP_MULTIPLY"
+					"multiplicative_target" "0"
+				}
+			}
+		}
+	}
+	"phantom_lancer_doppelwalk"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"illusion_1_damage_in_pct"
+		{
+			"value" "-15"
+			"operator" "OP_MULTIPLY"
+			
+			"multiplicative_target"	"-100"
+			"multiplicative_base_value"	"0"
+			
+			"linked_special_values"
+			{
+				"illusion_2_damage_out_pct" "20"
+				"illusion_2_damage_in_pct"
+				{
+					"value" "-90"
+					"operator" "OP_MULTIPLY"
+					
+					"multiplicative_target" "-100"
+					"multiplicative_base_value"	"500"
+				}
+			}
+		}
+	}
+	"phantom_lancer_phantom_edge"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"min_distance"
+		{
+			"value" "-20"
+			"operator" "OP_ADD"
+			"max_count" "5"
+			"linked_special_values"
+			{
+				"bonus_speed" "80"
+			}
+		}
+		"bonus_agility"
+		{
+			"value" "12"
+			"operator" "OP_ADD"
+		}
+	}
+	"phantom_lancer_juxtapose"
+	{
+		"proc_chance_pct"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"illusion_proc_chance_pct" "1"
+			}
+		}
+		"tooltip_illusion_damage"
+		{
+			"value" "7"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"illusion_damage_out_pct" "7"
+			}
+		}
+		"tooltip_total_illusion_damage_in_pct"
+		{
+			"value" "-35"
+			"operator" "OP_MULTIPLY"
+			
+			"multiplicative_target"			"-100"
+			"multiplicative_base_value"		"200"
+			
+			"linked_special_values"
+			{
+				"illusion_damage_in_pct"
+				{
+					"value" "-35"
+				
+					"operator" "OP_MULTIPLY"
+					"multiplicative_target" "0"
+				}
+			}
+		}
+	}
+}

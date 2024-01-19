@@ -1,0 +1,8 @@
+ot3_demo
+{
+	material materials/overviews/ot3_demo.vmat
+	pos_x -3712
+	pos_y 3008
+	scale 6.750
+}
+

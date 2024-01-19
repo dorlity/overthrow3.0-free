@@ -1,0 +1,111 @@
+"npc_dota_hero_broodmother"
+{
+	"broodmother_insatiable_hunger"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "9"
+			"operator" "OP_MULTIPLY"
+			"max_count" "7"
+		}
+		"bonus_damage"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+		}
+		"lifesteal_pct"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+		}
+	}
+	"broodmother_spin_web"
+	{
+		"health_regen"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+		}
+		"bonus_movespeed"
+		{
+			"value" "7"
+			"operator" "OP_ADD"
+		}
+	}
+	"broodmother_silken_bola"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "12"
+			"operator" "OP_MULTIPLY"
+		}
+		"impact_damage"
+		{
+			"value" "70"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"attack_damage" "9"
+			}
+		}
+	}
+	"broodmother_spawn_spiderlings"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+			"linked_abilities"
+			{
+				"broodmother_sticky_snare"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "10"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"damage"
+		{
+			"value" "100"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"damage_bonus" "5"
+			}
+			"linked_abilities"
+			{
+				"broodmother_sticky_snare"
+				{
+					"damage_per_second" "20"
+				}
+				"broodmother_buff_spiderling_lua"
+				{
+					"buff_damage" "1"
+				}
+			}
+		}
+		"tooltip_spiderling_hp"
+		{
+			"value" "300"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"hp_bonus" "300"
+			}
+			"linked_abilities"
+			{
+				"broodmother_sticky_snare"
+				{
+					"width" "45"
+				}
+				"broodmother_buff_spiderling_lua"
+				{
+					"buff_hp" "60"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,90 @@
+"npc_dota_hero_chaos_knight"
+{
+	"chaos_knight_chaos_bolt"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "3"
+		}
+		"damage_max"
+		{
+			"value" "80"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"damage_min" "40"
+			}
+		}
+	}
+	"chaos_knight_reality_rift"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"armor_reduction"
+		{
+			"value" "1.5"
+			"operator" "OP_ADD"
+		}
+	}
+	"chaos_knight_chaos_strike"
+	{
+		"chance"
+		{
+			"value" "3.33"
+			"operator" "OP_ADD"
+			"max_count" "17"
+		}
+		"crit_max"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+		}
+		"lifesteal"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+		}
+	}
+	"chaos_knight_phantasm_lua"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"outgoing_damage"
+		{
+			"value" "12"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"outgoing_damage_tooltip" "12"
+			}
+		}
+		"incoming_damage"
+		{
+			"value" "-25"
+			"operator" "OP_MULTIPLY"
+			
+			"multiplicative_target"			"-100"
+			"multiplicative_base_value"		"150"
+			
+			"linked_special_values"
+			{
+				"incoming_damage_tooltip"
+				{
+					"value" "-25"
+					"operator" "OP_MULTIPLY"
+					
+					"multiplicative_target" "0"
+					"multiplicative_base_value" "250"
+				}
+			}
+		}
+	}
+}

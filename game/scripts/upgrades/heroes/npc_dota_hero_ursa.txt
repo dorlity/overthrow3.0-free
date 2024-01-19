@@ -1,0 +1,88 @@
+"npc_dota_hero_ursa"
+{
+	"ursa_earthshock"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"shock_radius"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"hop_distance"
+		{
+			"value" "40"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"damage"
+		{
+			"value" "70"
+			"operator" "OP_ADD"
+		}
+	}
+	"ursa_overpower"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"slow_resist"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+			"max_count" "14"
+		}
+		"max_attacks"
+		{
+			"value" "0.5"
+			"operator" "OP_ADD"
+			"min_rarity" "rare"
+			"max_count" "8"
+		}
+	}
+	"ursa_fury_swipes"
+	{
+		"bonus_reset_time"
+		{
+			"value" "6"
+			"operator" "OP_ADD"
+		}
+		"damage_per_stack"
+		{
+			"value" "2"
+			"operator" "OP_ADD"
+		}
+	}
+	"ursa_enrage"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"damage_reduction"
+		{
+			"value" "1"
+			"operator" "OP_MULTIPLY"
+
+			"multiplicative_target"			"100"
+			"multiplicative_base_value"		"80"
+		}
+		"status_resistance"
+		{
+			"value" "3"
+			"operator" "OP_MULTIPLY"
+
+			"multiplicative_target"			"100"
+			"multiplicative_base_value"		"70"
+		}
+	}
+}

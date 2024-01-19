@@ -1,0 +1,83 @@
+"npc_dota_hero_omniknight"
+{
+	"omniknight_purification"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"heal"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"omniknight_martyr"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "7"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"base_strength"
+		{
+			"value" "8"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"base_hpregen" "6"
+			}
+		}
+		"strength_bonus"
+		{
+			"value" "2"
+			"operator" "OP_ADD"
+		}
+	}
+	"omniknight_hammer_of_purity"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count"	"4"
+			"linked_special_values"
+			{
+				"attack_cooldown" "-0.5"
+			}
+		}
+		"base_damage"
+		{
+			"value" "6"
+			"operator" "OP_ADD"
+		}
+		"bonus_damage"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+		}
+	}
+	"omniknight_guardian_angel"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"duration"
+		{
+			"value" "1"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+	}
+}

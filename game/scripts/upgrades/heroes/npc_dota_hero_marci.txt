@@ -1,0 +1,91 @@
+"npc_dota_hero_marci"
+{
+	"marci_grapple"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "20"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+			"linked_special_values"
+			{
+				"movement_slow_pct" "10"
+			}
+		}
+		"throw_distance_behind"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"landing_radius" "80"
+			}
+		}
+		"impact_damage"
+		{
+			"value" "160"
+			"operator" "OP_ADD"
+		}
+	}
+	"marci_companion_run"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"ally_movespeed_pct" "6"
+			}
+		}
+		"landing_radius"
+		{
+			"value" "55"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"max_jump_distance" "65"
+			}
+		}
+		"impact_damage"
+		{
+			"value" "150"
+			"operator" "OP_ADD"
+		}
+	}
+	"marci_guardian"
+	{
+		"lifesteal_pct"
+		{
+			"value" "6"
+			"operator" "OP_ADD"
+		}
+		"bonus_damage"
+		{
+			"value" "15"
+			"operator" "OP_ADD"
+		}
+	}
+	"marci_unleash"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"time_between_flurries"
+		{
+			"value" "-0.15"
+			"operator" "OP_ADD"
+			"max_count" "8"
+		}
+		"pulse_damage"
+		{
+			"value" "45"
+			"operator" "OP_ADD"
+		}
+	}
+}

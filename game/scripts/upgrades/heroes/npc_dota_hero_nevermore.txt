@@ -1,0 +1,130 @@
+"npc_dota_hero_nevermore"
+{
+	"nevermore_shadowraze1"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"linked_abilities"
+			{
+				"nevermore_shadowraze2"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+				"nevermore_shadowraze3"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"shadowraze_damage"
+		{
+			"value" "65"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"nevermore_shadowraze2"
+				{
+					"shadowraze_damage" "65"
+				}
+				"nevermore_shadowraze3"
+				{
+					"shadowraze_damage" "65"
+				}
+			}
+		}
+		"shadowraze_radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"nevermore_shadowraze2"
+				{
+					"shadowraze_radius" "30"
+				}
+				"nevermore_shadowraze3"
+				{
+					"shadowraze_radius" "30"
+				}
+			}
+		}
+		"stack_bonus_damage"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"nevermore_shadowraze2"
+				{
+					"stack_bonus_damage" "50"
+				}
+				"nevermore_shadowraze3"
+				{
+					"stack_bonus_damage" "50"
+				}
+			}
+		}
+	}
+	"nevermore_necromastery"
+	{
+		"necromastery_max_souls"
+		{
+			"value" "2"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"necromastery_max_souls_scepter" "2"
+			}
+		}
+	}
+	"nevermore_dark_lord"
+	{
+		"presence_armor_reduction"
+		{
+			"value" "-0.5"
+			"operator" "OP_ADD"
+		}
+		"presence_radius"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"nevermore_requiem"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"requiem_radius"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"requiem_line_speed" "35"
+			}
+		}
+		"damage"
+		{
+			"value" "24"
+			"operator" "OP_ADD"
+		}
+	}
+}

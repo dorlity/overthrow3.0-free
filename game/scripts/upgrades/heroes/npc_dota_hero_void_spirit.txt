@@ -1,0 +1,85 @@
+"npc_dota_hero_void_spirit"
+{
+	"void_spirit_aether_remnant"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"impact_damage"
+		{
+			"value" "80"
+			"operator" "OP_ADD"
+		}
+		"remnant_watch_distance"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"pull_destination" "3"
+			}
+		}
+	}
+	"void_spirit_dissimilate"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "15"
+		}
+		"damage"
+		{
+			"value" "90"
+			"operator" "OP_ADD"
+		}
+	}
+	"void_spirit_resonant_pulse"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "15"
+		}
+		"radius"
+		{
+			"value" "35"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"base_absorb_amount" "30"
+				"absorb_per_hero_hit" "20"
+			}
+		}
+		"damage"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+		}
+	}
+	"void_spirit_astral_step"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"radius"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"pop_damage"
+		{
+			"value" "55"
+			"operator" "OP_ADD"
+		}
+	}
+}

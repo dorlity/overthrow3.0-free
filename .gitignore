@@ -1,0 +1,10 @@
+.vscode
+!.vscode/settings.json
+
+!addoninfo.txt
+*.bin
+
+game/scripts/vscripts/old
+game/panorama/layout
+game/panorama/scripts
+game/panorama/styles

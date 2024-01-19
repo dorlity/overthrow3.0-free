@@ -1,0 +1,124 @@
+"npc_dota_hero_hoodwink"
+{
+	"hoodwink_acorn_shot"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"acorn_shot_damage"
+		{
+			"value" "20"
+			"operator" "OP_ADD"
+		}
+		"bounce_count"
+		{
+			"value" "1"
+			"operator" "OP_ADD"
+			"max_count" "3"
+		}
+		"bounce_range"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"hoodwink_bushwhack"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"hoodwink_hunters_boomerang"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"trap_radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_abilities"
+			{
+				"hoodwink_hunters_boomerang"
+				{
+					"radius" "30"
+				}
+			}
+		}
+		"total_damage"
+		{
+			"value" "55"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"hoodwink_hunters_boomerang"
+				{
+					"damage" "30"
+					"spell_amp" "3"
+				}
+			}
+		}
+	}
+	"hoodwink_scurry"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"movement_speed_pct"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+			"max_count" "6"
+			"linked_special_values"
+			{
+				"evasion" "5"
+				"radius" "50"
+			}
+		}
+	}
+	"hoodwink_sharpshooter"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "20"
+			"linked_abilities"
+			{
+				"hoodwink_decoy"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"max_damage"
+		{
+			"value" "200"
+			"operator" "OP_ADD"
+		}
+		"max_charge_time"
+		{
+			"value" "-0.4"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+	}
+}

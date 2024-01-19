@@ -1,0 +1,115 @@
+"npc_dota_hero_muerta"
+{
+	"muerta_dead_shot"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"impact_slow_duration" "0.2"
+			}
+
+			"linked_abilities"
+			{
+				"muerta_parting_shot"
+				{
+					"cooldown_and_manacost"
+					{
+						"value" "8"
+						"operator" "OP_MULTIPLY"
+					}
+				}
+			}
+		}
+		"damage"
+		{
+			"value" "55"
+			"operator" "OP_ADD"
+
+			"linked_abilities"
+			{
+				"muerta_parting_shot"
+				{
+					"damage"		"45"
+				}
+			}
+		}
+		"radius"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+			"max_count" "10"
+
+			"linked_special_values"
+			{
+				"ricochet_radius_start"		"25"
+				"ricochet_radius_end"		"25"
+			}
+		}
+	}
+	"muerta_the_calling_lua"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"damage"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+		}
+		"dead_zone_distance"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"hit_radius" "10"
+			}
+		}
+		"aura_movespeed_slow"
+		{
+			"value" "-5"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"aura_attackspeed_slow" "-10"
+			}
+		}
+	}
+	"muerta_gunslinger"
+	{
+		"double_shot_chance"
+		{
+			"value" "1.5"
+			"operator" "OP_ADD"
+			"max_count" "20"
+		}
+		"target_search_bonus_range"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"muerta_pierce_the_veil"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"bonus_damage"
+		{
+			"value" "10"
+			"operator" "OP_ADD"
+		}
+	}
+}

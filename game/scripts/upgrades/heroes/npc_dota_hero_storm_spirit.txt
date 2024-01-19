@@ -1,0 +1,90 @@
+"npc_dota_hero_storm_spirit"
+{
+	"storm_spirit_static_remnant"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"static_remnant_damage_radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"static_remnant_radius" "30"
+			}
+		}
+		"static_remnant_damage"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+		}
+	}
+	"storm_spirit_electric_vortex"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		//electric_vortex_pull_distance"
+		//{
+		//	"value" "30"
+		//	"operator" "OP_ADD"
+		//	"max_count" "10"
+		//	"linked_special_values"
+		//	{
+		//		"radius_scepter" "30"
+		//	}
+		//}
+	}
+	"storm_spirit_overload"
+	{
+		"overload_aoe"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"shard_activation_radius" "110"
+			}
+		}
+		"overload_damage"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+		}
+		"overload_attack_slow"
+		{
+			"value" "-20"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"shard_attack_speed_bonus" "10"
+			}
+		}
+	}
+	"storm_spirit_ball_lightning"
+	{
+		"ball_lightning_aoe"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"ball_lightning_vision_radius" "60"
+			}
+		}
+		"damage"
+		{
+			"value" "5"
+			"operator" "OP_ADD"
+		}
+	}
+}

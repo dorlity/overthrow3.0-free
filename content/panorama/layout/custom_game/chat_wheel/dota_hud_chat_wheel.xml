@@ -1,0 +1,40 @@
+<!-- xml reconstructed by Source 2 Viewer 7.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/chat_wheel/dota_hud_chat_wheel.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/layout/custom_game/scripts/utils.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/chat_wheel/dota_hud_chat_wheel_const.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/chat_wheel/dota_hud_chat_wheel.vjs_c" />
+	</scripts>
+	<snippets>
+		<snippet name="Phrase">
+			<Panel>
+				<Panel class="Phrase">
+					<Panel class="ChatWheelSoundIcon" />
+					<Label text="{s:phrase}" />
+				</Panel>
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel hittest="false" class="MyWheel">
+		<Panel id="Wheel">
+			<Panel id="Arrow" class="Hidden" />
+			<Panel id="PointerContainer">
+				<Panel id="WheelPointer" />
+			</Panel>
+			<Panel id="WheelBG">
+				<Panel id="WheelCenter">
+					<Panel id="WheelBG2" />
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="Bubble">
+			<DOTAHeroImage id="HeroImage" heroimagestyle="icon" />
+		</Panel>
+		<Panel hittest="false" id="PhrasesContainer" />
+		<Label id="WHTooltip" text="#whtooltip" class="MyTooltip" />
+	</Panel>
+</root>

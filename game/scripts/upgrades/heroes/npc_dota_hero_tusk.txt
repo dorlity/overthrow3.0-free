@@ -1,0 +1,104 @@
+"npc_dota_hero_tusk"
+{
+	"tusk_ice_shards"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "10"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"shard_damage"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"aghs_shard_damage" "15"
+			}
+		}
+		"shard_speed"
+		{
+			"value" "120"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"aghs_shard_move_slow" "6"
+			}
+		}
+	}
+	"tusk_snowball"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "5"
+		}
+		"snowball_damage"
+		{
+			"value" "60"
+			"operator" "OP_ADD"
+			"linked_special_values"
+			{
+				"snowball_damage_bonus" "20"
+			}
+		}
+		"snowball_speed"
+		{
+			"value" "65"
+			"operator" "OP_ADD"
+			"max_count" "10"
+			"linked_special_values"
+			{
+				"snowball_grab_radius" "30"
+			}
+		}
+	}
+	"tusk_tag_team"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"bonus_damage"
+		{
+			"value" "12"
+			"operator" "OP_ADD"
+		}
+		"radius"
+		{
+			"value" "30"
+			"operator" "OP_ADD"
+			"max_count"	"10"
+			"linked_special_values"
+			{
+				"attack_speed_slow" "15"
+			}
+		}
+	}
+	"tusk_walrus_punch"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "10"
+		}
+		"crit_multiplier"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+			"linked_abilities"
+			{
+				"tusk_walrus_kick"
+				{
+					"damage" "55"
+				}
+			}
+		}
+	}
+}

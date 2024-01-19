@@ -1,0 +1,90 @@
+"npc_dota_hero_pudge"
+{
+	"pudge_meat_hook"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"damage"
+		{
+			"value" "65"
+			"operator" "OP_ADD"
+		}
+		"hook_speed"
+		{
+			"value" "160"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+	"pudge_rot"
+	{
+		"rot_radius"
+		{
+			"value" "25"
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"rot_damage"
+		{
+			"value" "12"
+			"operator" "OP_ADD"
+		}
+	}
+	"pudge_flesh_heap"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+			"max_count" "6"
+		}
+		"damage_block"
+		{
+			"value"			"3"
+			"talents"
+			{
+				"special_bonus_unique_pudge_1"	"x1.5"
+			}
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+		"flesh_heap_strength_buff_amount"
+		{
+			"value"		"0.2"
+			"talents"
+			{
+				"special_bonus_unique_pudge_1"	"x1.5"
+			}
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+		"flesh_heap_range"
+		{
+			"value" "50"
+			"operator" "OP_ADD"
+			"max_count" "5"
+		}
+	}
+	"pudge_dismember"
+	{
+		"cooldown_and_manacost"
+		{
+			"value" "8"
+			"operator" "OP_MULTIPLY"
+		}
+		"strength_damage"
+		{
+			"value"				"0.1"
+			"talents"
+			{
+				"special_bonus_unique_pudge_3"	"x1.8"
+			}
+
+			"operator" "OP_ADD"
+			"max_count" "10"
+		}
+	}
+}
