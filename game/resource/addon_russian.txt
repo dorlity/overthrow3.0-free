@@ -2821,5 +2821,11 @@
 		"auto_select_plus"	"+{s:as_time_step}с"
 		"auto_select_minus"	"-{s:as_time_step}с"
 		"auto_select_current_time"	"{s:as_current_time} сек"
-    }
+
+		"DOTA_Tooltip_Ability_item_essence_of_speed"	"Сено скорости"
+		"DOTA_Tooltip_ability_item_essence_of_speed_Description"	"<h1>Активируемая: Съесть Сено</h1>Навсегда увеличивает вашу скорость передвижения на %speed_bonus%. Можно использовать только один раз."
+		"DOTA_Tooltip_modifier_item_essence_of_speed"	"Сено скорости"
+		"DOTA_Tooltip_modifier_item_essence_of_speed_Description"	"Скорость передвижения навсегда увеличена на <b><font color='#53ea48'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT%</font></b>"
+		"essence_speed" "Вы уже использовали этот предмет"
+	}
 }

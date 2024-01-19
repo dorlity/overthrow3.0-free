@@ -3055,5 +3055,11 @@ If you do not send us your steam URL or steamID we wont be adle to grant you ben
 		"auto_select_current_time"	"{s:as_current_time} sec"
 		"upgrades_panel_generic_toggler"	"Generic Upgrades"
 		"currency_shop_hint"	"Glory and Rerolls are obtained by playing the game, and from player tips.<br>Donation rewards are a thank-you gifts for helping the development of Overthrow 3.0.<br>All in-game content is available to all players for free."
-    }
+
+		"DOTA_Tooltip_Ability_item_essence_of_speed"	"Seno of Speed"
+		"DOTA_Tooltip_ability_item_essence_of_speed_Description"	"<h1>Active: Consume the Seno</h1>Permanently increases your movement speed by %speed_bonus%. Can only be used once."
+		"DOTA_Tooltip_modifier_item_essence_of_speed"	"Seno of Speed"
+		"DOTA_Tooltip_modifier_item_essence_of_speed_Description"	"Movement speed is permanently increased by <b><font color='#53ea48'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT%</font></b>"
+		"essence_speed"	"You have already used this item"
+	}
 }

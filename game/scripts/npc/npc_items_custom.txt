@@ -1,5 +1,6 @@
 #base items/vanilla_items_custom.txt
 #base items/orbs.txt
+#base items/seno.txt
 
 "DOTAAbilities"
 {

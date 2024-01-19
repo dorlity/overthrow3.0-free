@@ -18,6 +18,7 @@
 		"item"		"item_common_orb_octet"
 		"item"		"item_rare_orb_octet"
 		"item"		"item_epic_orb_octet"
+		"item"		"item_essence_of_speed"
 	}
 
 	"attributes"

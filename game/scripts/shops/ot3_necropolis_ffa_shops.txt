@@ -18,6 +18,7 @@
 		"item"		"item_common_orb_ffa"
 		"item"		"item_rare_orb_ffa"
 		"item"		"item_epic_orb_ffa"
+		"item"		"item_essence_of_speed"
 	}
 
 	"attributes"
