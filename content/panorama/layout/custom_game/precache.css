@@ -123,7 +123,7 @@
 	background-image: url("s2r://panorama/images/custom_game/minimap_side_container_bg_png.vtex");
 	background-image: url("s2r://panorama/images/custom_game/no_user_png.vtex");
 	background-image: url("s2r://panorama/images/custom_game/orb_png.vtex");
-	background-image: url("s2r://panorama/images/custom_game/overthrow_background_01_png.vtex");
+	background-image: url("file://{resources}/images/custom_game/overthrow_background_01.png");
 	background-image: url("s2r://panorama/images/custom_game/overthrow_victory_trophy_psd.vtex");
 	background-image: url("s2r://panorama/images/custom_game/patreon/alipay_png.vtex");
 	background-image: url("s2r://panorama/images/custom_game/patreon/new_methods_announcement_png.vtex");

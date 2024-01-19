@@ -166,7 +166,7 @@
 
 .Content_tournament
 {
-	background-image: url("s2r://panorama/images/custom_game/tournament_1_png.vtex");
+	background-image: url("file://{resources}/images/custom_game/tournament_1.png");
 }
 
 #LS_VideoHint

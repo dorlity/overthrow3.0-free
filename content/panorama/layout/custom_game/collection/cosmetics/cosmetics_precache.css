@@ -115,7 +115,7 @@
 	background-image: url("s2r://panorama/images/custom_game/collection/cosmetics/items/pet/roshan_platinum_png.vtex");
 	background-image: url("s2r://panorama/images/custom_game/collection/cosmetics/items/pet/roshan_courier_png.vtex");
 	background-image: url("s2r://panorama/images/custom_game/collection/cosmetics/items/pet/roshan_ti10_png.vtex");
-	background-image: url("s2r://panorama/images/custom_game/collection/cosmetics/items/pet/scotty_christmas_2023_png.vtex");
+	background-image: url("file://{resources}/images/custom_game/collection/cosmetics/items/pet/scotty_christmas_2023.png");
 	background-image: url("s2r://panorama/images/custom_game/collection/cosmetics/items/spray/based_spray_png.vtex");
 	background-image: url("s2r://panorama/images/custom_game/collection/cosmetics/items/spray/ez_spray_png.vtex");
 	background-image: url("s2r://panorama/images/custom_game/collection/cosmetics/items/spray/kekw_spray_png.vtex");
@@ -123,8 +123,8 @@
 	background-image: url("s2r://panorama/images/custom_game/collection/cosmetics/items/spray/monkas_spray_png.vtex");
 	background-image: url("s2r://panorama/images/custom_game/collection/cosmetics/items/spray/omegalul_spray_png.vtex");
 	background-image: url("s2r://panorama/images/custom_game/collection/cosmetics/items/spray/pogu_spray_png.vtex");
-	background-image: url("s2r://panorama/images/custom_game/collection/cosmetics/items/spray/pudge_mom_basher_spray_png.vtex");
-	background-image: url("s2r://panorama/images/custom_game/collection/cosmetics/items/spray/pudge_shapka_spray_png.vtex");
+	background-image: url("file://{resources}/images/custom_game/collection/cosmetics/items/spray/pudge_mom_basher_spray.png");
+	background-image: url("file://{resources}/images/custom_game/collection/cosmetics/items/spray/pudge_shapka_spray.png");
 	background-image: url("s2r://panorama/images/custom_game/collection/cosmetics/items/spray/roflan_spray_png.vtex");
 	background-image: url("s2r://panorama/images/custom_game/collection/cosmetics/items/spray/pepega_spray_png.vtex");
 	background-image: url("s2r://panorama/images/custom_game/collection/cosmetics/items/treasures/treasure_1_png.vtex");
