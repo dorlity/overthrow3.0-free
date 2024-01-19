@@ -44,7 +44,7 @@
 	]
 	HideInTools = false
 	IsTemplate = false
-	DefaultMap = "ot3_jungle_quintet"
+	DefaultMap = "ot3_necropolis_ffa"
 	DisableIK = false
 	EventGame = false
 	hero_picker =
